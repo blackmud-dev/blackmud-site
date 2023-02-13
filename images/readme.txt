@@ -3,6 +3,11 @@ Image sets for the BlackMud site.
 ### Races ###
 PLAYABLE RACES
 
+
+--- Mirlad ---
+Mirlad are the result of inter-breeding between elves and dwarves. They tend to be of dwarven height and of elven-build and have the thick course hair of dwarves. They have both the tensile strength of dwarven musculature and the agility of the elven frame. Roughly half of mirlad inherit the acute vision of their elven parent.
+
+
 --- Half Orc Description ---
 Half-orcs are a milder version of their orcish parent. They are usually born of human mothers and orcish fathers. Half-orc children born to orcish mothers, tend to have very short lives. Half-orcs for the most part appear as deformed humans. They often have broad, flat faces, jagged teeth, slightly grayish skin coloring and more body hair than a normal human.
 
