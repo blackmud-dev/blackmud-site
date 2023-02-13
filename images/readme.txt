@@ -1,6 +1,12 @@
 Image sets for the BlackMud site.
 
 ### Races ###
+PLAYABLE RACES
+
+--- Half Orc Description ---
+Half-orcs are a milder version of their orcish parent. They are usually born of human mothers and orcish fathers. Half-orc children born to orcish mothers, tend to have very short lives. Half-orcs for the most part appear as deformed humans. They often have broad, flat faces, jagged teeth, slightly grayish skin coloring and more body hair than a normal human.
+
+
 
 
 NON-PLAYABLE RACES
