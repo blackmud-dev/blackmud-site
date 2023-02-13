@@ -17,6 +17,9 @@ Ogres strongly resemble their orcish fathers, but are enormous in size. They ave
 
 NON-PLAYABLE RACES
 
+--- Orcs Description ---
+Orcs are of similar size to humans with broad flat faces. They have thick, course hair which also grows along the neck and upper half of their spines. Their skins is thick, rough and greyish in color. Orcs have dozens of small sharp teeth.
+
 --- Gralner Description ---
 Gralner appear to be the cross between a humanoid and an animal. Their appearance is an odd combination of feline and lupine characteristics. Males tend more toward the lupine, while females tend more toward feline.
 
