@@ -1,0 +1,492 @@
+body
+{
+    height: auto;
+    width: 100%;
+}
+
+header {
+    background-color: #070606;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    
+}
+
+header a {
+    color: #f3a30b;
+    text-decoration: none;
+    
+
+}
+
+a {
+    color: white;
+}
+
+nav {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+    nav ul {
+        display: flex;
+        margin-bottom: 35px;
+        
+    }
+
+nav ul li {
+    padding: 1rem;
+}
+
+.chron {
+    color: goldenrod;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.chon {
+    color: goldenrod;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.gamestats_container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.game_stats {
+    color: #f3a30b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+    .game_stats p {
+        padding-top: 0px;
+        margin-top: 0rem;
+    }
+
+main {
+    margin-top: 153.5px;
+    background-color: #141414;
+    padding-top: 30px;
+}
+
+
+
+#p_client {
+
+    font-family: Times New Roman, verdana, aria;
+
+}
+
+.races_block {
+    text-decoration: none;
+    color:burlywood;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.card_img {
+    width:30%;
+    align-self: flex-start;
+    max-width: 200px;
+    
+}
+
+.card_img img {
+    width: 200px;
+    height: 200px;
+}
+    
+    .card_block {
+        display: flex;
+        flex-direction: column;
+        
+        width: 60%;
+        
+    }
+    
+    .game_info_label {
+        font-size: 2.0rem;
+        font-weight: bold;
+        text-align: center;
+        color: goldenrod;
+        border-bottom: goldenrod solid 1px;
+        margin-top: 0;
+    }
+    
+    .game_info_desc {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+
+
+.gen_block {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: goldenrod;
+    font-size: x-large;
+}
+
+.raceinfo_label {
+    color: goldenrod;
+    font-size: large;
+    align-self: flex-start;
+    margin-left: 5%;
+    padding-bottom: 60px;
+}
+
+.gen_block p {
+    margin-left: 2%;
+}
+
+
+.races_block img {
+    width: 200px;
+    height: 200px;
+} 
+
+.gen_info_block {
+    color: burlywood;
+    width: 95%;
+    display: flex;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.gen_info_block ul {
+    line-height: 30px;
+}
+
+.rules_block {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: burlywood;
+    align-items: center;
+    justify-content: center;
+}
+
+    .rules_block p {
+        width: 85%;
+    }
+
+
+
+
+footer {
+    display: flex;
+    
+    padding-top: 40px;
+    padding-bottom: 140px;
+    justify-content: space-evenly;
+    background: linear-gradient(#141414, #070606);
+}
+
+ul {
+    list-style-type: none;
+}
+
+#breaker {
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+#footer_nav {
+    width: 10%;
+}
+
+#client {
+    width: 30%;
+    color: burlywood;
+    align-self: center;
+    
+}
+
+#lefty_breaker {
+    
+    transform: rotate(-0.25turn);
+    height: 64px;
+    width: 198px;
+    transform-origin: center;
+    
+}
+
+#righty_breaker {
+    transform: rotate(90deg);
+}
+
+footer ul {
+    font-size: small;
+}
+
+    footer ul li {
+        padding: 8px;
+    }
+
+footer .footer_spacer {
+    width: 5%;
+}
+
+footer .footer_mid_spacer {
+    width: 5%;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    main {
+        margin-top: 108.2px;
+    }
+
+
+    .logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    header {
+
+    }
+
+    .races_block img {
+        width: 150px;
+        height: 150px;
+    } 
+    
+
+}
+
+@media screen and (max-width: 912px) {
+    
+    main {
+        margin-top: 103.5px;
+    }
+    
+    nav {
+        font-size: 0.8rem;
+    }
+    
+    .game_stats div img {
+        height: 25px;
+        width: 25px;
+
+    }
+
+    #p_client {
+        font-size: small;
+    }
+
+    #welcome {
+        margin-top: 103.5px;
+        height: 300px;
+    }
+
+    #archway {
+        margin-top: 30px;
+    }
+
+    #archway a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #archway a h2 {
+        font-size: 1.0rem;
+    }
+
+    .chron {
+        font-size: 2.5rem;
+    }
+    #who {
+        padding: 2.0rem;
+    }
+
+    #who #hello {
+        font-size: 2rem;
+    }
+
+    #who p {
+        font-size: 0.9rem;
+    }
+
+    #game_info {
+        padding-top: 30px;
+    }
+
+        #game_info a {
+            padding-bottom: 15px;
+        }
+
+    .card_img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #history {
+
+    }
+
+    #game_info {
+        scroll-margin-top: 50px;
+    }
+
+    .game_info_label {
+        font-size: 1.5rem;
+    }
+
+    .game_info_desc {
+        font-size: small;
+    }
+
+    #game_info #classes {
+        padding-bottom: 50px;
+    }
+
+    #game_info #rules {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+
+        footer ul li {
+            padding: 4px;
+        }
+
+    #client {
+        font-size: small;
+    }
+
+}
+
+@media  screen and (max-width: 624px) {
+    .gamestats_container {
+        display: none;
+    }
+
+    main {
+        margin-top: 0;
+        padding-top: 20px;
+        background-image: linear-gradient(#070606, #141414);
+    }
+
+    header {
+        background-color: #070606;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .chron {
+        font-size: 2rem;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .chon {
+        font-size: 1.8rem;
+        
+    }
+
+
+    .gen_block {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gen_label {
+        color: goldenrod;
+        font-size: 1.3rem;
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+    
+    .gen_info_block {
+        color: burlywood;
+        width: 95%;
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 30px;
+        margin-left: 10%;
+    }
+    
+    .gen_info_block ul {
+        line-height: 22px;
+    }
+
+
+    footer {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    footer .footer_mid_spacer {
+        display: none;
+    }
+
+    .footer_spacer {
+        display: none;
+    }
+
+    #client {
+        width: 60%;
+    }
+
+    ul {
+        padding: 0;
+        padding-right: 5%;
+    }
+
+}
