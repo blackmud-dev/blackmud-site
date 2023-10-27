@@ -1,0 +1,751 @@
+body
+{
+    height: auto;
+    width: 100%;
+    background-color: #141414;
+}
+
+header {
+    background-color: #070606;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), transparent 80%), url("images/banner_m.png");
+    background-size: cover;
+}
+
+header a {
+    color: #f3a30b;
+    text-decoration: none;
+    
+
+}
+
+a {
+    color: white;
+}
+
+nav {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+    nav ul {
+        display: flex;
+        margin-bottom: 35px;
+        
+    }
+
+nav ul li {
+    padding: 1rem;
+}
+
+.chron {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.chon {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 100px;
+    border-top-color: #808080;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.gamestats_container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.game_stats {
+    color: #f3a30b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+    .game_stats p {
+        padding-top: 0px;
+        margin-top: 0rem;
+    }
+
+main {
+    margin-top: 100px;
+    background-color: #141414;
+    padding-top: 30px;
+}
+
+.gen_label {
+    color: #808080;
+    font-size: 2.5rem;
+    align-self: flex-start;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+#p_client {
+
+    font-family: Times New Roman, verdana, aria;
+
+}
+
+#policies {
+    color:#808080;
+    border-top-color: #808080;
+    border-top-width: 1px;
+    border-top-style: solid;
+
+    padding-top: 20px;
+    margin-top: 80px;
+}
+
+.races_block {
+    text-decoration: none;
+    color:burlywood;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.card_img_gods {
+    width:30%;
+    align-self: flex-start;
+    max-width: 200px;
+    
+}
+
+.card_img_gods img {
+    width: 200px;
+    height: 200px;
+}
+    
+    .card_block {
+        display: flex;
+        flex-direction: column;
+        
+        width: 60%;
+        
+    }
+    
+    .game_info_label {
+        font-size: 2.0rem;
+        font-weight: bold;
+        text-align: center;
+        color: goldenrod;
+        border-bottom: goldenrod solid 1px;
+        margin-top: 0;
+    }
+    
+    .game_info_desc {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+
+
+.gen_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #808080;
+    font-size: x-large;
+}
+
+
+
+.raceinfo_label {
+    color: goldenrod;
+    font-size: large;
+    align-self: flex-start;
+    margin-left: 5%;
+    padding-bottom: 60px;
+}
+
+.gen_block p {
+    margin-left: 2%;
+}
+
+
+.races_block img {
+    width: 200px;
+    height: 200px;
+} 
+
+.gen_info_block {
+    color: #808080;
+    width: 95%;
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    
+}
+
+.gen_block_evens {
+    background-color: white;
+    color: #070606;
+}
+
+.gen_info_block ul {
+    line-height: 30px;
+}
+
+.rules_block {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: burlywood;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    
+    
+}
+
+    .rules_block p {
+        width: 85%;
+        color:#808080;
+    }
+
+
+
+
+footer {
+    display: flex;
+    
+    padding-top: 40px;
+    padding-bottom: 140px;
+    justify-content: space-evenly;
+    background: linear-gradient(#141414, #070606);
+}
+
+ul {
+    list-style-type: none;
+}
+
+#breaker {
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+#footer_nav {
+    width: 10%;
+}
+
+#client {
+    width: 30%;
+    color: burlywood;
+    align-self: center;
+    
+}
+
+#lefty_breaker {
+    
+    transform: rotate(-0.25turn);
+    height: 64px;
+    width: 198px;
+    transform-origin: center;
+    
+}
+
+#righty_breaker {
+    transform: rotate(90deg);
+}
+
+footer ul {
+    font-size: small;
+}
+
+    footer ul li {
+        padding: 8px;
+    }
+
+footer .footer_spacer {
+    width: 5%;
+}
+
+footer .footer_mid_spacer {
+    width: 5%;
+}
+
+.float_right {
+    display: block;
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.float_left {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.balric_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #141414;
+}
+
+.entia_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+
+#maps {
+    background-color: #141414;
+}
+
+#balric {
+    border-radius: 10px;
+}
+
+
+
+/* Gods */
+.gods_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gods_title {
+    font-size: 3rem;
+    color:goldenrod;
+    font-weight: bold;
+    
+}
+
+.gods_name_left {
+    color: goldenrod;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 60px;
+    margin-bottom: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: goldenrod;
+    border-bottom-style: solid;
+}
+
+.gods_name_right {
+    color: goldenrod;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-right: 60px;
+    text-align: right;
+    margin-bottom: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: goldenrod;
+    border-bottom-style: solid;
+}
+
+.gods_desc {
+    color:#808080;
+    font-size: 1.5rem;
+}
+
+.gods_grid {
+    
+}
+
+.gods_info {
+    margin-bottom: 100px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    main {
+        margin-top: 108.2px;
+    }
+
+
+    .logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    header {
+
+    }
+
+    .races_block img {
+        width: 150px;
+        height: 150px;
+    } 
+    
+
+}
+
+@media screen and (max-width: 912px) {
+    
+    main {
+        margin-top: 103.5px;
+    }
+    
+    nav {
+        font-size: 0.8rem;
+    }
+    
+    .gods_title {
+        font-size: 2rem;
+        color:goldenrod;
+        font-weight: bold;
+        
+    }
+
+    .game_stats div img {
+        height: 25px;
+        width: 25px;
+
+    }
+
+    #p_client {
+        font-size: small;
+    }
+
+    #welcome {
+        margin-top: 103.5px;
+        height: 300px;
+    }
+
+    #archway {
+        margin-top: 30px;
+    }
+
+    #archway a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #archway a h2 {
+        font-size: 1.0rem;
+    }
+
+    .chron {
+        font-size: 2.5rem;
+    }
+    #who {
+        padding: 2.0rem;
+    }
+
+    #who #hello {
+        font-size: 2rem;
+    }
+
+    #who p {
+        font-size: 0.9rem;
+    }
+
+    #game_info {
+        padding-top: 30px;
+    }
+
+        #game_info a {
+            padding-bottom: 15px;
+        }
+
+    .card_img_gods {
+        width: 150px;
+        height: 150px;
+    }
+
+    #history {
+
+    }
+
+    #game_info {
+        scroll-margin-top: 50px;
+    }
+
+    .game_info_label {
+        font-size: 1.5rem;
+    }
+
+    .game_info_desc {
+        font-size: small;
+    }
+
+    #game_info #classes {
+        padding-bottom: 50px;
+    }
+
+    #game_info #rules {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+
+        footer ul li {
+            padding: 4px;
+        }
+
+    #client {
+        font-size: small;
+    }
+    
+    #balric {
+        border-radius: 10px;
+        width: 579px;
+        height: 443.7px;
+    }
+
+    .float_right {
+        display: block;
+        float: right;
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .float_left {
+        display: block;
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .gods_name_left {
+        color: goldenrod;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 60px;
+        margin-bottom: 30px;
+        border-bottom-width: 1px;
+        border-bottom-color: goldenrod;
+        border-bottom-style: solid;
+    }
+    
+    .gods_name_right {
+        color: goldenrod;
+        font-size: 1rem;
+        font-weight: bold;
+        padding-right: 60px;
+        text-align: right;
+        margin-bottom: 30px;
+        border-bottom-width: 1px;
+        border-bottom-color: goldenrod;
+        border-bottom-style: solid;
+    }
+
+}
+
+@media  screen and (max-width: 624px) {
+    .gamestats_container {
+        display: none;
+    }
+
+    main {
+        margin-top: 0;
+        padding-top: 20px;
+        background-image: linear-gradient(#070606, #141414);
+    }
+
+    header {
+        background-color: #070606;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .chron {
+        font-size: 2rem;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .chon {
+        font-size: 2rem;
+        color: white;
+
+    }
+
+
+    .gen_block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .gen_label {
+        color: #808080;
+        font-size: 2rem;
+        align-self: flex-start;
+        margin-left: 5%;
+        font-weight: bold;
+    }
+    
+    .gen_info_block {
+        color: #808080;
+        width: 95%;
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 30px;
+        margin-left: 10%;
+        
+    }
+    
+    .gen_info_block p {
+        padding-right: 50px;
+        
+    }
+
+
+
+
+    footer {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    footer .footer_mid_spacer {
+        display: none;
+    }
+
+    .footer_spacer {
+        display: none;
+    }
+
+    #client {
+        width: 60%;
+    }
+
+    ul {
+        padding: 0;
+        padding-right: 5%;
+    }
+
+    .float_right {
+        display: block;
+        float: right;
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .float_left {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .card_img_gods {
+        width:30%;
+        align-self: flex-start;
+        max-width: 100px;
+        
+    }
+    
+    .card_img_gods img {
+        width: 100px;
+        height: 100px;
+    }
+    
+
+    #balric {
+        border-radius: 10px;
+        width: 414px;
+        height: 310.5px;
+    }
+
+    #entia {
+        width: 285px;
+        height: 131px;
+    }
+
+    .gods_name_left {
+        color: goldenrod;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 60px;
+        margin-bottom: 30px;
+        border-bottom-width: 1px;
+        border-bottom-color: goldenrod;
+        border-bottom-style: solid;
+    }
+    
+    .gods_name_right {
+        color: goldenrod;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-right: 60px;
+        text-align: right;
+        margin-bottom: 30px;
+        border-bottom-width: 1px;
+        border-bottom-color: goldenrod;
+        border-bottom-style: solid;
+    }
+}
