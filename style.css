@@ -302,6 +302,16 @@ nav ul li {
     margin-right: 20px;
 }
 
+.g_info_image_new {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
 .g_info_block {
     display: flex;
     background-color: white;
@@ -316,18 +326,24 @@ nav ul li {
 }
 
 .g_info_b_new {
+    column-count: 2;
     display: flex;
-    background-color: #CCD1D1;
-    box-shadow: 0 0 10px 10px #CCD1D1;
+    background-color: #E5E7E9;
+    box-shadow: 0 0 5px 10px #E5E7E9;
     width:43%;
     min-width: 43%;
     height: 100%;
     border-radius: 10px;
+    border-style: none;
     text-align: center;
         
     margin: 20px;
     padding: 10px;
     padding-right: 30px;
+}
+
+.g_info_b_new :first-child {
+  align-self: center;
 }
 
 .g_info_desc {
