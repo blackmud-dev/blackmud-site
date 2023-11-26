@@ -304,7 +304,7 @@ nav ul li {
 
 .g_info_block {
     display: flex;
-    background-color: white;
+    background-color: 	#D3D3D3;
     width:43%;
     min-width: 43%;
     height: 100%;
