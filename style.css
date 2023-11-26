@@ -317,6 +317,21 @@ nav ul li {
     
 }
 
+.g_info_block_new {
+    display: flex;
+    background-color: #CCD1D1;
+    width:43%;
+    min-width: 43%;
+    height: 100%;
+    border-radius: 10px;
+    
+    
+    margin: 20px;
+    padding: 10px;
+    padding-right: 30px;
+    
+}
+
 .g_info_desc {
     display: flex;
     height: 100%;
