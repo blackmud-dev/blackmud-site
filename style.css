@@ -742,11 +742,25 @@ footer .footer_mid_spacer {
         height: 100%;
         border-radius: 10px;
         
-        
         margin: 20px;
         padding: 10px;
         padding-right: 30px;
         
+    }
+    
+    .g_info_b_new {
+        display: flex;
+        background-color: #CCD1D1;
+        box-shadow: 0 0 10px 10px #CCD1D1;
+        width:43%;
+        min-width: 43%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        
+        margin: 20px;
+        padding: 10px;
+        padding-right: 30px;
     }
     
     .g_info_desc {
@@ -869,7 +883,22 @@ footer .footer_mid_spacer {
         padding: 10px;
         padding-right: 30px;
     }
-    
+
+    .g_info_b_new {
+        display: flex;
+        background-color: #CCD1D1;
+        box-shadow: 0 0 10px 10px #CCD1D1;
+        width:43%;
+        min-width: 43%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        
+        margin: 20px;
+        padding: 10px;
+        padding-right: 30px;
+    }
+        
     .g_info_desc {
         
         
@@ -1015,6 +1044,21 @@ footer .footer_mid_spacer {
         height: 100%;
         border-radius: 10px;
         flex-shrink: 0;
+        margin: 20px;
+        padding: 10px;
+        padding-right: 30px;
+    }
+    
+    .g_info_b_new {
+        display: flex;
+        background-color: #CCD1D1;
+        box-shadow: 0 0 10px 10px #CCD1D1;
+        width:43%;
+        min-width: 43%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        
         margin: 20px;
         padding: 10px;
         padding-right: 30px;
@@ -1260,7 +1304,22 @@ footer .footer_mid_spacer {
         padding: 10px;
         padding-right: 30px;
     }
-    
+
+    .g_info_b_new {
+        display: flex;
+        background-color: #CCD1D1;
+        box-shadow: 0 0 10px 10px #CCD1D1;
+        width:43%;
+        min-width: 43%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        
+        margin: 20px;
+        padding: 10px;
+        padding-right: 30px;
+    }
+        
     .g_info_desc {
         
         
