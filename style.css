@@ -318,7 +318,7 @@ nav ul li {
 .g_info_b_new {
     display: flex;
     background-color: #CCD1D1;
-    /* box-shadow: 0 0 10px 10px #CCD1D1; */
+    box-shadow: 0 0 10px 10px #CCD1D1;
     width:43%;
     min-width: 43%;
     height: 100%;
