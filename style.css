@@ -310,11 +310,9 @@ nav ul li {
     height: 100%;
     border-radius: 10px;
     
-    
     margin: 20px;
     padding: 10px;
     padding-right: 30px;
-    
 }
 
 .g_info_block_new {
@@ -324,12 +322,10 @@ nav ul li {
     min-width: 43%;
     height: 100%;
     border-radius: 10px;
-    
-    
+        
     margin: 20px;
     padding: 10px;
     padding-right: 30px;
-    
 }
 
 .g_info_desc {
