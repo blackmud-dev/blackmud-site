@@ -390,6 +390,11 @@ footer .footer_mid_spacer {
     padding: 40px;
 }
 
+@font-face {
+font-family: "IMMORTAL";
+url("IMMORTAL.ttf") format ("opentype");
+}
+
 @media screen and (max-width: 1280px) {
 
     main {
