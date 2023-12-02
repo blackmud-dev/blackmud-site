@@ -13,20 +13,23 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body style="font-family:IMMORTAL">
     <header>
-        <div class="logo">
+        <nav>
+        	<div class="nav_container">
+          <div class="nav_logo">
             <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150" >
             
-        </div>
-        <nav style="font-family:IMMORTAL">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#game_info">Game Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-               
-                <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></li>
-            </ul>
+          </div>
+          <div class="nav_menu">
+            <p><a href="#game_details">Details</a></p>
+            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></p>
+          </div>
+          <div class="nav_text">
+          	<p><a href="index.html">Home</a></p>
+          </div>
+          </div>
         </nav>
 
         <div class="gamestats_container">
@@ -45,14 +48,14 @@
 
     <main id="home">
         <section id="welcome">
-            <div class="g_welcome">
-                <div id="intro">
-                  <div id="hello">BlackMUD: The Age of Rebirth!</div>
+            <div class="g_welcome_frame">
+                <div class="g_welcome_intro">
+                  <div class="g_welcome_name">BlackMUD: The Age of Rebirth!</div>
                   <br>
-                  <div id="summary">The light of Phaet and the shadow of Nixil have both been seen in the realm again. Change has come alive in the world, and the struggle between order and chaos, good and evil are renewed.</div>
+                  <div class="g_welcome_summary">The light of Phaet and the shadow of Nixil have both been seen in the realm again. Change has come alive in the world, and the struggle between order and chaos, good and evil are renewed.</div>
                 </div>
            
-                <div id="enter_realm">
+                <div class="g_welcome_enter">
                     <a href="telnet://blackmud.com:2000">
                         <img src="images/enter_w_transp.png" alt="archway to mud client" width="250"  height="250" />
                         <h2 style="color:white;text-shadow: 1px 1px 2px darkred"> Enter the Realm </h2>
@@ -77,7 +80,7 @@
             <div class="social_spacer"></div>
         </section>
           
-        <section id="game_info">
+        <section id="game_details">
         
             <div class="g_info_b_new">
                 <a href="history.html">

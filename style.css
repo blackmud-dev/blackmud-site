@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-header {
+/* header {
     background-color: #070606;
     display: flex;
     width: 100%;
@@ -27,6 +27,7 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     font-weight: bold;
+    width: 100%;
 }
 
     nav ul {
@@ -35,14 +36,85 @@ nav {
         
     }
 
-nav ul li {
-    padding: 1rem;
+    nav ul li {
+        padding: 1rem;
+    }
+*/
+
+/* ============= nav bar at the top of each page ============= */
+.nav_container {
+  	width: 100%;
+	  display: flex;
+	  align-items: center;
+	  
+	  font-size: 2rem;
+
+    position: fixed;
+
+    background-size: contain;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), transparent 80%), url("images/banner_m.png");
+    background-position: top;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+	}
+
+.nav_container :first-child {
+  align-self: start;
 }
 
+.nav_container :second-child {
+  align-self: center;
+}
+
+.nav_container :third-child {
+  align-self: end;
+}
+
+.nav_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_logo img {
+    width: 150px;
+    height: 150px;
+	  text-align: center;
+	  align-self: center;
+}
+
+.nav_menu {
+	  display: flex;
+	  align-items: center;
+    justify-content: space-evenly;
+	  padding: 1rem;
+}
+    .nav_menu p a {
+        display: flex;
+        width: 100%;
+	      text-decoration: none;
+        padding: 1rem;
+        color: #141414;
+    }
+
+.nav_text {
+    width: 100%;
+	  padding: 1rem;
+	  text-align: center;
+	  align-self: center;
+}
+
+    .nav_text p a {
+        width: 100%;
+	      text-decoration: none;
+        padding: 1rem;
+        align-self: end;
+    }
+   
+   
 /* ============= navigation for classes and races internal tags ============ */
 #warrior, #monk, #cleric, #mage, #druid, #thief, #gorboc, #wep, #gorboc, #human, #dwarf, #tarr, #half_giant, #half_orc, #mirlad, #elf, #halfling, #half_elf, #giant, #ogre, #orc, #gralner {
-    padding-top: 150px;
-    margin-top: -150px;
     scroll-margin-top: 10px;
 }
 
@@ -85,80 +157,6 @@ nav ul li {
 
 }
 
-#home {
-    display: block;
-    font-size: 100%;
-}
-
-#welcome {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
-    background-position: top;
-    background-attachment: fixed;
-    background-size: contain;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    transform-origin: center;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    margin-top: 150px;
-}
-
-#intro {
-    justify-content: center;
-    align-items: center;
-    max-width: 60%;
-    color:white;
-    text-shadow: 1px 1px 2px darkred;
-}
-
-#hello {
-    width: 100%;
-    font-size: 2.5rem;
-    text-align: center;
-    justify-content: center;
-    font-weight: bold;
-    color:white;
-    text-shadow: 1px 1px 2px darkred;
-}	
-
-#summary {
-    width: 100%;
-    font-size: 1.7rem;
-    justify-content: center;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    color:white;
-    text-shadow: 1px 1px 2px darkred;
-}
-
-#enter_realm {
-	width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family:IMMORTAL;
-}
-
-    #enter_realm h2 {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        color: white;
-        font-size: 2rem;
-    }
-
-    #enter_realm a {
-        text-decoration: none;
-    }
-
-    #enter_realm img {
-        border-radius: 10px;
-    }
-    
 #social {
     display: flex;
     background-color: #141414;
@@ -201,7 +199,7 @@ nav ul li {
 }
 */
 
-#game_info {
+#game_details {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -209,10 +207,10 @@ nav ul li {
     color: #141414;
     align-items: stretch;
     height: 100%;
-    scroll-margin-top: 150px;
+    scroll-margin-top: 175px;
 }
 
-#game_info a {
+#game_details a {
     display: flex;
     text-decoration: none;
     color: #141414;
@@ -228,15 +226,58 @@ nav ul li {
     max-width: 60%;
 }
 
+.g_welcome_frame {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
+    background-position: top;
+    background-attachment: fixed;
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    transform-origin: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.g_welcome_intro {
+    text-align: center;
+    font-size: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    color:white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.g_welcome_hello {
+    width: 100%;
+    font-size: 3rem;
+    justify-content: center;
+    color:white;
+    text-align: center;
+}	
+
+.g_welcome_summary {
+    width: 100%;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    color:white;
+}
+
 .g_welcome {
     column-count: 2;
     display: flex;
-    height: 100%;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 60px;
-    font-family: Immortal;
 }
 
 .g_welcome :first-child {
@@ -256,8 +297,32 @@ nav ul li {
   margin: 20px;
   padding: 10px;
   padding-right: 30px;
+}
+
+.g_welcome_enter {
+	width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family:IMMORTAL;
 }
+
+    .g_welcome_enter h2 {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .g_welcome_enter a {
+        text-decoration: none;
+    }
+
+    .g_welcome_enter img {
+        border-radius: 10px;
+    }
 
 .g_info_image {
     
@@ -459,7 +524,6 @@ nav ul li {
     justify-content: center;
     margin-top: 150px;
     padding: 30px;
-    font-family:IMMORTAL;
     text-shadow: 1px 1px 2px grey;
 }
 
@@ -469,7 +533,6 @@ nav ul li {
     justify-content: center;
     text-align: center;
     padding: 30px;
-    font-family:IMMORTAL;
     text-shadow: 1px 1px 1px grey;
 }
 
@@ -703,7 +766,7 @@ font-family: "IMMORTAL";
 url("IMMORTAL.ttf") format ("opentype");
 }
 
-
+/*
 @media screen and (max-width: 1420px){
     .g_info_image {
     
@@ -1046,8 +1109,8 @@ url("IMMORTAL.ttf") format ("opentype");
         margin-top: 150px;
     }
 
-}
-
+} */
+/*
 @media  screen and (max-width: 624px) {
     .gamestats_container {
         display: none;
@@ -1085,13 +1148,13 @@ url("IMMORTAL.ttf") format ("opentype");
 
     #welcome {
         margin: 0;
-    height: 600px;
-    background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
-    background-position: top;
-    background-attachment: fixed;
-    background-size: contain;
-    background-origin: border-box;
-    background-repeat: no-repeat;
+        height: 600px;
+        background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
+        background-position: top;
+        background-attachment: fixed;
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
         flex-direction: column;
         align-items: center;
         width: 100%
@@ -1127,7 +1190,7 @@ url("IMMORTAL.ttf") format ("opentype");
 
         #enter_realm a img {
             /* padding-left: 0.6rem; */
-        }
+/*        }
 
         #enter_realm a h2 {
             padding-bottom: 10px;
@@ -1290,4 +1353,4 @@ url("IMMORTAL.ttf") format ("opentype");
         
     }
 
-}
+} */
