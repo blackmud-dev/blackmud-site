@@ -1,7 +1,12 @@
-﻿body
+﻿/* ============= general page modifiers ============= */
+body
 {
     height: auto;
     width: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* header {
@@ -46,10 +51,9 @@ nav {
   	width: 100%;
 	  display: flex;
 	  align-items: center;
-	  
-	  font-size: 2rem;
-
     position: fixed;
+
+	  font-size: 2rem;
 
     background-size: contain;
     background-image: linear-gradient(to right, rgba(255,255,255,1), transparent 80%), url("images/banner_m.png");
@@ -82,13 +86,13 @@ nav {
     height: 150px;
 	  text-align: center;
 	  align-self: center;
+	  padding-top: 1rem;
 }
 
 .nav_menu {
 	  display: flex;
 	  align-items: center;
     justify-content: space-evenly;
-	  padding: 1rem;
 }
     .nav_menu p a {
         display: flex;
@@ -112,25 +116,8 @@ nav {
         align-self: end;
     }
    
-   
-/* ============= navigation for classes and races internal tags ============ */
-#warrior, #monk, #cleric, #mage, #druid, #thief, #gorboc, #wep, #gorboc, #human, #dwarf, #tarr, #half_giant, #half_orc, #mirlad, #elf, #halfling, #half_elf, #giant, #ogre, #orc, #gralner {
-    scroll-margin-top: 10px;
-}
-
-.test_container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.test_container div {
-    
-}
-
-.inner_container {
-    display: flex;
-    justify-content: space-between;
-}
+ 
+/*  ============= game stats area ============= */
 
 .gamestats_container {
     display: flex;
@@ -143,7 +130,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
 }
 
     .game_stats p {
@@ -154,78 +140,9 @@ nav {
 #p_client {
 
     font-family: Times New Roman, verdana, aria;
-
 }
 
-#social {
-    display: flex;
-    background-color: #141414;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    scroll-margin-top: 100px;
-}
-
-    #social #discord a {
-        padding-top: 0.5px;
-    }
-
-    .social_spacer {
-        width: 10%;
-    }
-
-/*
- #mountainview_image {
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-}
-
-#mountainview_image::after {
-    box-sizing: border-box;
-    background: -webkit-gradient(linear,left bottom,left top,from(#141414),color-stop(80%,transparent));
-    background: -o-linear-gradient(bottom,#141414,transparent 80%);
-    background: linear-gradient(0deg, #141414, transparent 80%);
-    position: absolute;
-    content: "";
-    display: inline-block;
-}
-*/
-
-#game_details {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #141414;
-    color: #141414;
-    align-items: stretch;
-    height: 100%;
-    scroll-margin-top: 175px;
-}
-
-#game_details a {
-    display: flex;
-    text-decoration: none;
-    color: #141414;
-}
-
-.content {
-    background-color: black;
-}
-
-.g_intro {
-    display: block;
-    color: orange;
-    max-width: 60%;
-}
-
+/*  ============= index.html welcome and intro area ============= */
 .g_welcome_frame {
     width: 100%;
     height: 600px;
@@ -324,6 +241,48 @@ nav {
         border-radius: 10px;
     }
 
+/*  ============= social media link area ============= */
+#social {
+    display: flex;
+    background-color: #141414;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    scroll-margin-top: 100px;
+}
+
+    #social #discord a {
+        padding-top: 0.5px;
+    }
+
+    .social_spacer {
+        width: 10%;
+    }
+
+/*  ============= game details tile area on index.html ============= */
+
+#game_details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #141414;
+    color: #141414;
+    align-items: stretch;
+    height: 100%;
+    scroll-margin-top: 175px;
+}
+
+#game_details a {
+    display: flex;
+    text-decoration: none;
+    color: #141414;
+}
+
+.content {
+    background-color: black;
+}
+
 .g_info_image {
     
     width: 250px;
@@ -400,32 +359,112 @@ nav {
     padding-bottom: 20px;
 }
 
-/* ================= races.html css ==================*/
-#races_main {
-    margin-top: 119px;
+.game_info_label {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    border-bottom-style: solid;
+    border-bottom-color: #141414;
+    border-bottom-width: 2px;
+    font-size: 2rem;
+    padding-right: 40px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.game_info_label_reverse {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom-style: solid;
+    border-bottom-color: #141414;
+    border-bottom-width: 2px;
+    font-size: 2rem;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.game_info_desc {
+    color: #141414;
+    font-size: 1.5rem;
+    padding-right: 40px;
+}
+
+.card_block {
+    display: flex;
+    flex-direction: column;
+    font-family:IMMORTAL;
+    text-shadow: 1px 1px 2px grey;
+    width: 100%;
+}
+
+.card_img {
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.card_img_reverse {
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 60px;
+    width: 200px;
+    height: 200px;
+}
+
+#game_info #pantheon {
+    text-decoration: none;
+    color:burlywood;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#game_info #rules {
+    text-decoration: none;
+    color:burlywood;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+#game_info #classes {
+    text-decoration: none;
+    color:burlywood;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ================= races.html css ==================*/
+
+#gorboc, #wep, #gorboc, #human, #dwarf, #tarr, #half-giant, #half-orc, #mirlad, #elf, #halfling, #half-elf, #giant, #ogre, #orc, #gralner {
+    scroll-margin-top: 200px;
+}
+
+#races_play_list, #races_noplay_list {
+    scroll-margin-top: 200px;
 }
 
 #races_info {
     width: 100%;
     margin: 0 auto;
     display: inline-block;
-    
 }
 
 .raceinfo_label {
-    display: flex;
-    padding: 20px;
+	  display: flex;
+    padding: 30px;
     background-color: #141414;
-    color: #808080;
-    font-size: 2.8rem;
+    color: orange;
+    font-size: 2rem;
     font-weight: bold;
     justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    flex-direction: column;
-    
+    margin-top: 150px;
+    padding: 30px;
+    text-shadow: 1px 1px 2px grey;
 }
 
 .raceinfo_label a {
@@ -452,6 +491,114 @@ nav {
     border-bottom-color: #808080;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+}
+
+.raceinfo_desc {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.g_races_play_list {
+	  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.g_races_play_list p {
+    color: orange;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.g_races_play_list p a {
+    color: orange;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.races_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.races_evens {
+    background-color: #141414;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.races_label_evens {
+    border-bottom-style: solid;
+    border-bottom-color: #808080;
+    border-bottom-width: 1px;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.races_desc_evens {
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.races_evens {
+    background-color: #141414;
+    color: #808080;
+}
+
+.races_label_evens {
+}
+
+.races_desc_evens {
+}
+
+#races_bottom_margin {
+    margin-bottom: 0px;
+    padding-bottom: 80px;
+}
+
+.fixed_anchors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 0px;
+    
+    border-radius: 10px;
+    background-color: #141414;
+}
+
+.fixed_anchors a {
+    padding:10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin:20px;
+}
+
+
+/* ================= classes.html css ==================*/
+
+#warrior, #monk, #cleric, #mage, #druid, #thief {
+    scroll-margin-top: 200px;
 }
 
 #classes_info {
@@ -485,35 +632,6 @@ nav {
     column-gap: 40px;
 }
 
-
-.races_block {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-content: space-between;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.races_evens {
-    background-color: #141414;
-    color: #808080;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    
-}
-
-.races_label_evens {
-    border-bottom-style: solid;
-    border-bottom-color: #808080;
-    border-bottom-width: 1px;
-}
-
-.races_desc_evens {
-    color: #808080;
-}
-
 .classinfo_label {
     display: flex;
     padding: 30px;
@@ -536,128 +654,87 @@ nav {
     text-shadow: 1px 1px 1px grey;
 }
 
-.fixed_anchors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 100px;
-    right: 0px;
-    
-    border-radius: 10px;
-    background-color: #141414;
+
+/* ================= history.html css ==================*/
+
+.gen_label {
+    color: #808080;
+    font-size: 2.5rem;
+    align-self: flex-start;
+    margin-left: 5%;
+    font-weight: bold;
 }
 
-.fixed_anchors a {
-    padding:10px;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    margin:20px;
-}
-
-.card_block {
-    display: flex;
-    flex-direction: column;
-    font-family:IMMORTAL;
-    text-shadow: 1px 1px 2px grey;
+.gen_block {
     width: 100%;
-}
-
-.card_img {
-    border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 200px;
-    height: 200px;
-}
-
-.card_img_reverse {
-    border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 60px;
-    width: 200px;
-    height: 200px;
-}
-
-.game_info_label {
     display: flex;
-    justify-content: flex-end;
-    border-bottom-style: solid;
-    border-bottom-color: #141414;
-    border-bottom-width: 2px;
-    font-size: 2rem;
-    padding-right: 40px;
-    font-weight: bold;
-    margin-right: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #808080;
+    font-size: x-large;
 }
 
-.game_info_label_reverse {
+.gen_block p {
+    margin-left: 2%;
+}
+
+.gen_info_block {
+    color: #808080;
+    width: 95%;
     display: flex;
-    justify-content: flex-end;
-    border-bottom-style: solid;
-    border-bottom-color: #141414;
-    border-bottom-width: 2px;
-    font-size: 2rem;
-    padding-right: 40px;
-    font-weight: bold;
-}
-
-.game_info_desc {
-    color: #141414;
     font-size: 1.5rem;
-    padding-right: 40px;
+    margin-bottom: 30px;
+    padding-left: 30px;
 }
 
-.races_evens {
-    background-color: #141414;
-    color: #808080;
+.gen_block_evens {
+    background-color: white;
+    color: #070606;
 }
 
-.races_label_evens {
-    border-bottom-style: solid;
-    border-bottom-color: #808080;
-    border-bottom-width: 1px;
+.gen_info_block ul {
+    line-height: 30px;
 }
 
-.races_desc_evens {
-    color: #808080;
+.chron {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
 }
 
-#races_bottom_margin {
-
-    margin-bottom: 0px;
-    padding-bottom: 80px;
+.chon {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 100px;
+    border-top-color: #808080;
+    border-top-width: 1px;
+    border-top-style: solid;
 }
 
-#game_info #pantheon {
-    text-decoration: none;
-    color:burlywood;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    
+.float_right {
+    display: block;
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
-#game_info #rules {
-    text-decoration: none;
-    color:burlywood;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 60px;
-}
-
-#game_info #classes {
-    text-decoration: none;
-    color:burlywood;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
+.float_left {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 
+/* ============== page footer ============= */
 footer {
     display: flex;
     
@@ -667,43 +744,11 @@ footer {
     background: linear-gradient(#141414, #070606);
 }
 
-ul {
-    list-style-type: none;
-}
-
-#breaker {
-    background-color: #141414;
-    padding: 0;
-    margin: 0;
-}
-
-footer a {
-    color:white;
-    text-decoration: none;
-}
-
-#footer_nav {
-    width: 10%;
-}
-
 #client {
     width: 30%;
     color: burlywood;
     align-self: center;
     font-size: larger;
-}
-
-#lefty_breaker {
-    
-    transform: rotate(-0.25turn);
-    height: 64px;
-    width: 198px;
-    transform-origin: center;
-    
-}
-
-#righty_breaker {
-    transform: rotate(90deg);
 }
 
 footer ul {
@@ -722,44 +767,14 @@ footer .footer_mid_spacer {
     width: 5%;
 }
 
-
-.skill_name {
-    font-size: 1.5rem;
-    
+footer a {
+    color:white;
+    text-decoration: none;
 }
 
-.skill_usage {
-    font-size: 1rem;
+#footer_nav {
+    width: 10%;
 }
-
-.skill_desc {
-    font-size: 1rem;
-    padding-bottom: 30px;
-    padding-right: 40px;
-}
-
-.skills_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    
-    
-}
-
-.skills_header {
-    font-size: 2.3rem;
-    color: #f3a30b;
-
-    padding-bottom: 0px;
-
-}
-
-.skills_block {
-    padding-bottom: 80px;
-    font-family:IMMORTAL;
-    text-shadow: 1px 1px 2px grey;
-}
-
 
 @font-face {
 font-family: "IMMORTAL";

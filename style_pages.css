@@ -89,14 +89,6 @@ main {
     padding-top: 30px;
 }
 
-.gen_label {
-    color: #808080;
-    font-size: 2.5rem;
-    align-self: flex-start;
-    margin-left: 5%;
-    font-weight: bold;
-}
-
 #p_client {
 
     font-family: Times New Roman, verdana, aria;
@@ -156,20 +148,6 @@ main {
         margin-top: 0;
     }
 
-
-
-.gen_block {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: #808080;
-    font-size: x-large;
-}
-
-
-
 .raceinfo_label {
     color: goldenrod;
     font-size: large;
@@ -178,34 +156,12 @@ main {
     padding-bottom: 60px;
 }
 
-.gen_block p {
-    margin-left: 2%;
-}
-
 
 .races_block img {
     width: 200px;
     height: 200px;
 } 
 
-.gen_info_block {
-    color: #808080;
-    width: 95%;
-    display: flex;
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    padding-left: 30px;
-    
-}
-
-.gen_block_evens {
-    background-color: white;
-    color: #070606;
-}
-
-.gen_info_block ul {
-    line-height: 30px;
-}
 
 .rules_block {
     font-size: 1rem;
@@ -261,19 +217,6 @@ footer a {
     color: burlywood;
     align-self: center;
     
-}
-
-#lefty_breaker {
-    
-    transform: rotate(-0.25turn);
-    height: 64px;
-    width: 198px;
-    transform-origin: center;
-    
-}
-
-#righty_breaker {
-    transform: rotate(90deg);
 }
 
 footer ul {
