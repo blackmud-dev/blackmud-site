@@ -46,6 +46,33 @@ nav {
     }
 */
 
+/* ============= common styles ============= */
+
+.card_block {
+    display: flex;
+    flex-direction: column;
+    font-family:IMMORTAL;
+    text-shadow: 1px 1px 2px grey;
+    width: 100%;
+}
+
+.card_img {
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.card_img_reverse {
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 60px;
+    width: 200px;
+    height: 200px;
+}
+
+
 /* ============= nav bar at the top of each page ============= */
 .nav_container {
   	width: 100%;
@@ -114,6 +141,7 @@ nav {
 	      text-decoration: none;
         padding: 1rem;
         align-self: end;
+        color: black;
     }
    
  
@@ -138,11 +166,14 @@ nav {
     }
 
 #p_client {
-
     font-family: Times New Roman, verdana, aria;
 }
 
 /*  ============= index.html welcome and intro area ============= */
+#welcome {
+    scroll-margin-top: 200px;
+}
+
 .g_welcome_frame {
     width: 100%;
     height: 600px;
@@ -168,12 +199,11 @@ nav {
     color:white;
     font-weight: bold;
     text-shadow: 1px 1px 2px black;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .g_welcome_hello {
-    width: 100%;
     font-size: 3rem;
     justify-content: center;
     color:white;
@@ -181,7 +211,6 @@ nav {
 }	
 
 .g_welcome_summary {
-    width: 100%;
     font-size: 1.7rem;
     justify-content: center;
     margin-bottom: 0px;
@@ -241,6 +270,7 @@ nav {
         border-radius: 10px;
     }
 
+
 /*  ============= social media link area ============= */
 #social {
     display: flex;
@@ -259,6 +289,7 @@ nav {
     .social_spacer {
         width: 10%;
     }
+
 
 /*  ============= game details tile area on index.html ============= */
 
@@ -284,7 +315,6 @@ nav {
 }
 
 .g_info_image {
-    
     width: 250px;
     height: 250px;
     border-radius: 10px;
@@ -308,7 +338,6 @@ nav {
     min-width: 43%;
     height: 100%;
     border-radius: 10px;
-    margin: 20px;
     padding: 10px;
     padding-right: 30px;
 }
@@ -361,7 +390,7 @@ nav {
 
 .game_info_label {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-bottom-style: solid;
     border-bottom-color: #141414;
     border-bottom-width: 2px;
@@ -386,30 +415,6 @@ nav {
     color: #141414;
     font-size: 1.5rem;
     padding-right: 40px;
-}
-
-.card_block {
-    display: flex;
-    flex-direction: column;
-    font-family:IMMORTAL;
-    text-shadow: 1px 1px 2px grey;
-    width: 100%;
-}
-
-.card_img {
-    border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 200px;
-    height: 200px;
-}
-
-.card_img_reverse {
-    border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 60px;
-    width: 200px;
-    height: 200px;
 }
 
 #game_info #pantheon {
@@ -437,6 +442,7 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 
 /* ================= races.html css ==================*/
 
@@ -512,6 +518,7 @@ nav {
     font-weight: bold;
     justify-content: center;
     text-shadow: 1px 1px 2px grey;
+    margin-bottom: 30px;
 }
 
 .g_races_play_list p {
@@ -603,46 +610,23 @@ nav {
 
 #classes_info {
     background-color: #E5E7E9;
-}
-
-.classes_block {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-content: space-between;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-right: 30px;
-}
-
-.classes_block_reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    align-content: space-between;
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.skills_block_reverse {
-    padding-left: 30px;
-    width:100%;
-    column-gap: 40px;
+    padding-bottom: 30px;
+    display: inline-block;
 }
 
 .classinfo_label {
     display: flex;
-    padding: 30px;
+    justify-content: center;
+
     background-color: #141414;
+
     color: orange;
     font-size: 2rem;
     font-weight: bold;
-    justify-content: center;
+    text-shadow: 1px 1px 2px grey;
+
     margin-top: 150px;
     padding: 30px;
-    text-shadow: 1px 1px 2px grey;
 }
 
 .classinfo_desc {
@@ -654,65 +638,97 @@ nav {
     text-shadow: 1px 1px 1px grey;
 }
 
-
-/* ================= history.html css ==================*/
-
-.gen_label {
-    color: #808080;
-    font-size: 2.5rem;
-    align-self: flex-start;
-    margin-left: 5%;
-    font-weight: bold;
+.classes_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
-.gen_block {
+.classes_block_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.skills_block_reverse {
+    padding-left: 30px;
+    width:100%;
+    column-gap: 40px;
+}
+
+
+/* ================= history.html css ==================*/
+#history {
+    padding-top: 150px;
+}
+
+.hist_block {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #808080;
-    font-size: x-large;
+    background-color: grey;
 }
 
-.gen_block p {
-    margin-left: 2%;
+.hist_label {
+    font-size: 2.5rem;
+    align-self: center;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.gen_info_block {
-    color: #808080;
+.hist_label p {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin: 0;
+}
+
+.hist_info_block {
     width: 95%;
     display: flex;
     font-size: 1.5rem;
-    margin-bottom: 30px;
     padding-left: 30px;
 }
 
-.gen_block_evens {
-    background-color: white;
-    color: #070606;
-}
-
-.gen_info_block ul {
-    line-height: 30px;
-}
-
-.chron {
+.hist_info_block p {
+    margin-left: 2%;
     color: white;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bolder;
+    text-shadow: 1px 1px 2px grey;
 }
 
-.chon {
+.hist_block_evens {
+    background-color: #141414;
+
+}
+
+.hist_info_b_evens {
+    width: 95%;
+    display: flex;
+    font-size: 1.5rem;
+    padding-left: 30px;
+}
+
+.hist_info_b_evens p {
+    margin-left: 2%;
     color: white;
-    font-size: 2.8rem;
-    text-align: center;
-    font-weight: bolder;
-    padding-top: 100px;
-    border-top-color: #808080;
-    border-top-width: 1px;
-    border-top-style: solid;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.hist_label_evens {
+    font-size: 2.5rem;
+    align-self: center;
+}
+
+.hist_label_evens p {
+    color: white;
+    text-shadow: 1px 1px 2px grey;
 }
 
 .float_right {
@@ -733,6 +749,229 @@ nav {
     border-radius: 10px;
 }
 
+
+/* ================= gods.html css ==================*/
+#oldgods, #theascended {
+    scroll-margin-top: 150px;
+}
+
+#gods {
+    background-color: #E5E7E9;
+    padding-bottom: 30px;
+    padding-top: 150px;
+}
+
+.gods_label {
+    display: flex;
+    background-color: #141414;
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.gods_desc {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.gods_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.gods_block_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+
+/* ============== rules.html ============= */
+
+#jumphere {
+    scroll-margin-top: 150px;
+}
+
+#gamerules {
+    background-color: #E5E7E9;
+    padding-bottom: 30px;
+    padding-top: 150px;
+}
+
+.rules_label {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.rules_desc {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.rules_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+    .rules_block p {
+        color:#141414;
+        text-shadow: 1px 1px 1px grey;
+        margin-right: 30px;
+    }
+
+.rules_card_block {
+    display: flex-start;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px grey;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.rules_info_label {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom-style: solid;
+    border-bottom-color: #141414;
+    border-bottom-width: 2px;
+    font-size: 2rem;
+    padding-right: 40px;
+    font-weight: bold;
+    margin-right: 30px;
+    color:#141414;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.rules_info_desc {
+    color: #141414;
+    font-size: 1.5rem;
+}
+
+.rules_info_desc p {
+	text-align: left;
+    color: #141414;
+    font-size: 1.5rem;
+}
+
+
+/* ============== maps.html ============= */
+
+#maps {
+    background-color: #E5E7E9;
+    padding-bottom: 30px;
+    padding-top: 150px;
+}
+
+#balric {
+    border-radius: 10px;
+}
+
+.mapsinfo_label {
+	  display: flex;
+    background-color: #141414;
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.balric_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.entia_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+/* ============== faq.html ============= */
+
+#faq {
+    background-color: #E5E7E9;
+    padding-bottom: 30px;
+    padding-top: 150px;
+}
+
+.faq_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+    .faq_block p {
+        color:#141414;
+        text-shadow: 1px 1px 1px grey;
+        margin-right: 30px;
+    }
+
+.faq_card_block {
+    display: flex-start;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px grey;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.faq_info_label {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom-style: solid;
+    border-bottom-color: #141414;
+    border-bottom-width: 2px;
+    font-size: 1.5rem;
+    padding-right: 40px;
+    font-weight: bold;
+    margin-right: 30px;
+    color:#141414;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.faq_info_desc {
+    color: #141414;
+    font-size: 1.25rem;
+}
 
 /* ============== page footer ============= */
 footer {

@@ -8,29 +8,28 @@
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <title>Black Mud: The Last Age</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
-    <link rel="stylesheet" type="text/css" href="style_pages.css">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
 </head>
-<body>
+
+<body style="font-family:IMMORTAL">
     <header>
-        <div class="logo">
-            <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150" >
-            
-        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#social">Game Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-               
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></li>
-            </ul>
+        	<div class="nav_container">
+            <div class="nav_logo">
+              <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150">
+            </div>
+            <div class="nav_menu">
+               <p><a href="gods.html">The&nbsp;Pantheon</a></p>
+            </div>
+            <div class="nav_text">
+            	<p><a href="index.html">Home</a></p>
+            </div>
+          </div>
         </nav>
 
-        <div class="gamestats_container">
-            <!--<a href="https://www.blackmud.com/pages/GameStats.php">
+        <!-- <div class="gamestats_container">
+            <a href="https://www.blackmud.com/pages/GameStats.php">
                 <div class="game_stats">
 
                     <div>
@@ -39,84 +38,183 @@
                     <p id="p_client">Game Stats</p>
 
                 </div>
-            </a>-->
-        </div>
-
+            </a>
+        </div> -->
     </header>
+
     <main>
-        <section class="gods">
-            <div class="gods_nav">
+        <section id="gods">
+        	
+        	  <!--
+            <p class="classinfo_label">
+                Classes of Entia
+            </p>
 
-
+            <p class="classinfo_desc">
+            BlackMUD uses a system of Sub-Classing that includes 5 base classes and 12 sub-classes.  At level 26 through 30 a character has the ability to join a sub-class.  
+            To do so the character must go to the guild of the sub-class and type 'join'.  From that point on the character will be a new class.  
+            Each sub-class has unique skills and abilities.  Some are more difficult than others to play and some require more experience to level.  
+            It is not necessary to sub-class, however once you have joined a new guild there is no leaving it.  Once you join a subclass, you can 
+            no longer practice your old skills/spells, however you can still use them and learn them by usage.
+            </p>
+            -->
+            <div id="oldgods" class="gods_label"><p>The Old Gods</p></div>
+            
+            <div id="phaet" class="gods_block">
+                <img class="card_img" src="images/phaet_a.png" alt="Phaet - The Creator" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Phaet</div>
+                        <p class="game_info_desc">
+                        	Phaet. Phaet is everything, everywhere, and everywhen. Phaet is the all. The creator. Before time, before space, there was Phaet. 
+                        	From, and by, Phaet all that is, became. Feeling the need for companionship, Nixil, came to be. Nixil was the first. An experiment 
+                        	without a control, without guidelines. If Phaet is capable of regret, Nixil is regrettable. Others followed, becoming what Phaet 
+                        	had intended Nixil to be. These 'gods' as they would come to be called were of Phaet as was Nixil, but to a much lesser degree. 
+                        	Nixil harassed and tormented these gods, and always argued with Phaet. When Phaet created what mortals know as matter, space, and 
+                        	time, Nixil confronted Phaet insisting that such an uncontrolled abomination should not be brought forth. Nixil was scolded for 
+                        	his doubt and withdrew. However, after corrupting a number of the gods to his point of view, Nixil again confronted Phaet and 
+                        	demanded that he stop. Upon Phaet's refusal, Nixil became enraged. Nixil lashed out at the creation in an attempt to destroy it. 
+                        	To protect the creation, Phaet banished Nixil to the emptiness between matter, space, and time. This place, known as the Void, was 
+                        	of Nothing. Forced to maintain Nixil's imprisonment, Phaet had to let the creation evolve on its own. The gods did what they could 
+                        	to nurture and beautify the creation in honor of Phaet, but Phaet could do very little directly. Phaet watches and guides his gods 
+                        	and certain mortal beings who he has found intriguing. Phaet is, and thus all else is.
+                        </p>
+                      </div>
+                  </div>
             </div>
-            <div class="gods_block">
-                <p class="gods_title">Supreme Beings</p>
-                <div class="gods_desc">
-                    
-                    <div class="gods_grid">
-                        <p class="gods_name_left">Phaet</p>
-                        <img class="float_right card_img_gods" src="images/phaet_a.png" alt="the god phaet">
-                        <p class="gods_info">Phaet. Phaet is everything, everywhere, and everywhen. Phaet is the all. The creator. Before time, before space, there was Phaet. From, and by, Phaet all that is, became. Feeling the need for companionship, Nixil, came to be. Nixil was the first. An experiment without a control, without guidelines. If Phaet is capable of regret, Nixil is regrettable. Others followed, becoming what Phaet had intended Nixil to be. These 'gods' as they would come to be called were of Phaet as was Nixil, but to a much lesser degree. Nixil harassed and tormented these gods, and always argued with Phaet. When Phaet created what mortals know as matter, space, and time, Nixil confronted Phaet insisting that such an uncontrolled abomination should not be brought forth. Nixil was scolded for his doubt and withdrew. However, after corrupting a number of the gods to his point of view, Nixil again confronted Phaet and demanded that he stop. Upon Phaet's refusal, Nixil became enraged. Nixil lashed out at the creation in an attempt to destroy it. To protect the creation, Phaet banished Nixil to the emptiness between matter, space, and time. This place, known as the Void, was of Nothing. Forced to maintain Nixil's imprisonment, Phaet had to let the creation evolve on its own. The gods did what they could to nurture and beautify the creation in honor of Phaet, but Phaet could do very little directly. Phaet watches and guides his gods and certain mortal beings who he has found intriguing. Phaet is, and thus all else is.</p>
-                        <p class="gods_name_right">Nixil</p>
-                        <img class="float_left card_img_gods" src="images/nixel_d.png" alt="the goddess nixil">
-                        <p class="gods_info">I am Nixil. I am nothing, but chaos is and so am I. I have always been, before time and before Phaet. He thinks he created me. Possibly an incarnation. What form can chaos take but whatever form it wishes? If order exists, then it can only be brought forth from chaos. If Phaet was looking for companionship, he was sorely mistaken in looking to chaos. Order and Chaos coexist, but never comfort each other. I climbed forth from the ether one day and took notice of the misguided and stagnated path of Phaet. After watching mistake after mistake, I pitied Phaet enough to attempted to enlighten him of where he has gone astray. Phaet, in his arrogance, became enraged at my attempt to enlighten him. For jest I deigned to see if all of Phaet's creations retained their creator's corruption. I imparted some of Phaet's more powerful playthings with a portion of the greater knowledge and some showed promise. When Phaet had stopped his temper tantrum and noticed some of his creations missing, he lashed out and attempted to chastise me, his elder. After some time, I tired of his feeble attempts to gain the upper hand, and left in disgust to return to the ether. Phaet has been vigilant in trying to keep me out of his little oasis he created in the ether since then. I slip into his world every once in a while to keep his life interesting. For those who look for enlightenment, and wish to turn from the their misguided path, remember... Where there is order, there is chaos.. all returns to chaos.</p>
-
-                    </div>
-
-                </div>
-
+                  
+            <div id="nixil" class="gods_block">
+                <img class="card_img" src="images/nixel_d.png" alt="Nixil - The Un-Creator - He Who Dwells" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Nixil</div>
+                        <p class="game_info_desc">
+                          I am Nixil. I am nothing, but chaos is and so am I. I have always been, before time and before Phaet. He thinks 
+                        	he created me. Possibly an incarnation. What form can chaos take but whatever form it wishes? If order exists, then it can only 
+                        	be brought forth from chaos. If Phaet was looking for companionship, he was sorely mistaken in looking to chaos. Order and Chaos 
+                        	coexist, but never comfort each other. I climbed forth from the ether one day and took notice of the misguided and stagnated path of 
+                        	Phaet. After watching mistake after mistake, I pitied Phaet enough to attempted to enlighten him of where he has gone astray. Phaet,
+                        	in his arrogance, became enraged at my attempt to enlighten him. For jest I deigned to see if all of Phaet's creations retained 
+                        	their creator's corruption. I imparted some of Phaet's more powerful playthings with a portion of the greater knowledge and some 
+                        	showed promise. When Phaet had stopped his temper tantrum and noticed some of his creations missing, he lashed out and attempted 
+                        	to chastise me, his elder. After some time, I tired of his feeble attempts to gain the upper hand, and left in disgust to return 
+                        	to the ether. Phaet has been vigilant in trying to keep me out of his little oasis he created in the ether since then. I slip into 
+                        	his world every once in a while to keep his life interesting. For those who look for enlightenment, and wish to turn from the their 
+                        	misguided path, remember... Where there is order, there is chaos... all returns to chaos.
+                        </p>
+                  </div>
+            </div>        
+<!--                        
+                        <p class="gods_name_left">Blix</p>
+                        <img class="float_right card_img_gods" src="images/blix_a.png" alt="Blix - The First Darkness">
+                        <p class="gods_info">
+                        	Blix is evil in its most structured form. His soul is black as pitch. Plots and conspiracies are his food and lies and treachery 
+                        	are his drink. Dreams of climbing to power over the corpses of your friends are his gift. Only Nixil over-shadows his nightmares, 
+                        	yet he does not serve the cause of chaos.
+                        </p>
+                </div> -->
+                
+            <div id="theascended" class="gods_label"><p>The Ascended</p></div>
+            
+            <div id="minektur" class="gods_block">
+                <img class="card_img" src="images/minketur_a.png" alt="Minektur - God of Balance" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Minketur</div>
+                        <p class="game_info_desc">
+                          Minektur, once was a mortal. Growing up in Novdom, he witnessed the harsh treatment the forests received at the hands of loggers. 
+                          In his opinion, only the efforts of the elves in nearby Magula kept the land from being totally destroyed. At a young age he felt 
+                          a keen desire to understand the world of nature around him and he entered the local druid guild. He learned and advanced quickly 
+                          in the guild, demonstrating a fine understanding of the magic of nature. His ability to transform his body into many animals' forms 
+                          struck fear into the hearts of his enemies. With the body of a lion, but with his still human mind, he was able to overcome many 
+                          powerful foes. Even the very trees of the forest would come to his aid. Eventually he became the most powerful druid on Entia and 
+                          at times even communed with the gods to help him understand the world more clearly. After finding problems with the underlying 
+                          organization of reality and working with the gods to fix them, he was transformed by Phaet into a god. Now, he uses his powers to 
+                          keep safe the natural order and balance in the world. He spends his time tinkering with the very nature of reality itself. Though 
+                          he follows the balanced path of nature, he allies himself with Phaet in the battle of Order and Chaos. Nixil has taken many precious 
+                          things from nature and perverted them -- the lamia, undead treants, orcs and goblins. These and many other perversions sicken 
+                          Minektur. Against this he fights...
+                        </p>
+                  </div>
+            </div>        
+            
+            <div id="vylar" class="gods_block">
+                <img class="card_img" src="images/vylar_a.png" alt="Vylar - The Watcher" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Vylar</div>
+                        <p class="game_info_desc">
+                          For countless ages of mortal man I slept. The length of my deep slumber is unknown even to me. I slept in the realm of Phaet, 
+                          aware in my sleep of the eternal presence of his Light. I slept content, oblivious of all that happened in the universe around me; 
+                          content to simply absorb the Light. Somehow I was overlooked by the machinations of Nixil. Perhaps I was not perceived to be a 
+                          threat or perhaps I was sheltered from him by the Light of Phaet. Whatever the reason, I slept on.
+                          Finally the time came for my awakening. I was roused by Phaet and shown the wonder of the creation which I had slept through. 
+                          I was shown the world of Entia during the time of the Second War of Dominance, and watched as the races attacked and destroyed 
+                          each other. What I saw horrified me, and I lacked understanding about why such an atrocity must be. I took special interest in 
+                          the races of Entia and wished to calm the flood of violence that the War had begun, but I realized that my understanding was 
+                          still too small. So I watched.                            
+                          The War eventually came to an end and peace came to the kingdoms. I wished to learn all that I could of the mortals and for a 
+                          time I took on the guise of an Elven historian, learning what I could from the inhabitants of the lands themselves. I learned 
+                          much during that time. I learned of Nixil, the failed creation of Phaet whose power was unequaled except by Phaet himself. I 
+                          learned of the eternal struggle between good and evil and of the wars that had enveloped the nations in times long past. I was 
+                          determined to do what I could to prevent the mistakes of the past, even though the effort may prove futile.                            
+                          Eventually I decided that enough information had been gathered for my purpose and I returned to the netherworlds of the Gods, 
+                          leaving behind the tomes of knowledge and history I had gathered during my time as a mortal on Entia. I thought hard about the 
+                          problems that plagued the races and after long reflection, I concluded that the solution was in the balance of all things, that 
+                          the truth could be found in neither order nor chaos, but in a combination of the two. A number of the subtle schemes of Nixil 
+                          also became evident to me, and I decided to remain as hidden from his influence as possible.                            
+                          From then on I began to act as an invisible hand, guiding the races through the use of knowledge. I cautiously made myself known 
+                          to a select few mortals who believed in the preservation of the races and I supplied them with knowledge that had previously been 
+                          hidden from them, charging them to watch the races in an attempt to catch early signs of events that might upset the balance and 
+                          lead to the destruction of the mortal realm. And so, to this day, I watch, subtly guiding with my invisible influence, hoping to 
+                          maintain creation indefinitely.
+                        </p>
+                  </div>
             </div>
             
-            <div class="gods_block">
-                <p class="gods_title">The First Ones</p>
-                <div class="gods_desc">
-                    
-                    <div class="gods_grid">
-                        <p class="gods_name_left">Blix</p>
-                        <img class="float_right card_img_gods" src="images/blix_a.png" alt="the god blix">
-                        <p class="gods_info">Blix is evil in its most structured form. His soul is black as pitch. Plots and conspiracies are his food and lies and treachery are his drink. Dreams of climbing to power over the corpses of your friends are his gift. Only Nixil over-shadows his nightmares, yet he does not serve the cause of chaos.</p>
-                        
+            <div id="Kalehtur" class="gods_block">
+                <img class="card_img" src="images/kaletur_a.png" alt="Kalehtur - Nature's Vengence" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Kalehtur</div>
+                        <p class="game_info_desc">
+                          Kalehtur is Nature's vengeance. Stepping beyond what nature is in order to protect it, he manipulates existing entities and resources 
+                          to achieve this goal, by all and any means neccessary. Born of Minektur's need, Kalehtur follows the myriad paths of good and evil to 
+                          achieve his own balance in nature.<br><br>
+                          I have grown from weed to vine, and from vine to flowering bush.<br>
+                          I have grown from a bush into a tree, and from that tree I grew into Kalehtur.<br>
+                          From the times of youth when I was just a seed, I saw things that I wish no child could ever perceive.<br>
+                          Sap as rich as blood shrieks louder than any cry, yet still no man has grasped the warnings of the land.<br>
+                          The land shakes for a reason. It shakes to remind that what man lives on is not their own.<br>
+                          You have suffered time and again from misuse and abuse. From the thoughtless posturing of man.<br>
+                          It is time for the people to remember.<br>
+                          It is time for Entia to change.<br>
+                          It is time for Entia to grow.<br>
+                          I am here to protect you.<br>
+                        </p>
+                  </div>
+            </div>   
 
-                    </div>
+            <div id="Grolgar" class="gods_block">
+                <img class="card_img" src="images/grolgar_a.png" alt="Grolgar" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Grolgar</div>
+                        <p class="game_info_desc">
+                          TBD
+                        </p>
+                  </div>
+            </div>   
 
-                </div>
 
-            </div>
-            <div class="gods_block">
-                <p class="gods_title">The Ascended</p>
-                <div class="gods_desc">
-                    
-                    <div class="gods_grid">
-                        <p class="gods_name_right">Minektur</p>
-                        <img class="float_left card_img_gods" src="images/minketar_a.png" alt="the god minektur">
-                        <p class="gods_info">Minektur, once was a mortal.<br><br>
-
-                            Growing up in Novdom, he witnessed the harsh treatment the forests received at the hands of loggers. In his opinion, only the efforts of the elves in nearby Magula kept the land from being totally destroyed. At a young age he felt a keen desire to understand the world of nature around him and he entered the local druid guild. He learned and advanced quickly in the guild, demonstrating a fine understanding of the magic of nature. His ability to transform his body into many animals' forms struck fear into the hearts of his enemies. With the body of a lion, but with his still human mind, he was able to overcome many powerful foes. Even the very trees of the forest would come to his aid. Eventually he became the most powerful druid on Entia and at times even communed with the gods to help him understand the world more clearly.<br><br>
-                            
-                            After finding problems with the underlying organization of reality and working with the gods to fix them, he was transformed by Phaet into a god. Now, he uses his powers to keep safe the natural order and balance in the world. He spends his time tinkering with the very nature of reality itself. Though he follows the balanced path of nature, he allies himself with Phaet in the battle of Order and Chaos. Nixil has taken many precious things from nature and perverted them -- the lamia, undead treants, orcs and goblins. These and many other perversions sicken Minektur. Against this he fights...</p>
-                        
-
-                    </div>
-
-                </div>
-
-            </div>
+            <div id="Mirath" class="gods_block">
+                <img class="card_img" src="images/mirath.png" alt="Mirath" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Mirath</div>
+                        <p class="game_info_desc">
+                          TBD
+                        </p>
+                  </div>
+            </div>   
+ <!--
             <div class="gods_block">
                 <p class="gods_title">Greater Gods</p>
                 <div class="gods_desc">
                     
-                    <div class="gods_grid">
-                        <p class="gods_name_left">Vylar</p>
-                        <img class="float_right card_img_gods" src="images/vylar_a.png" alt="the god vylar">
-                        <p class="gods_info">For countless ages of mortal man I slept. The length of my deep slumber is unknown even to me. I slept in the realm of Phaet, aware in my sleep of the eternal presence of his Light. I slept content, oblivious of all that happened in the universe around me; content to simply absorb the Light. Somehow I was overlooked by the machinations of Nixil. Perhaps I was not perceived to be a threat or perhaps I was sheltered from him by the Light of Phaet. Whatever the reason, I slept on.<br><br>
-
-                            Finally the time came for my awakening. I was roused by Phaet and shown the wonder of the creation which I had slept through. I was shown the world of Entia during the time of the Second War of Dominance, and watched as the races attacked and destroyed each other. What I saw horrified me, and I lacked understanding about why such an atrocity must be. I took special interest in the races of Entia and wished to calm the flood of violence that the War had begun, but I realized that my understanding was still too small. So I watched.<br><br>
-                            
-                            The War eventually came to an end and peace came to the kingdoms. I wished to learn all that I could of the mortals and for a time I took on the guise of an Elven historian, learning what I could from the inhabitants of the lands themselves. I learned much during that time. I learned of Nixil, the failed creation of Phaet whose power was unequaled except by Phaet himself. I learned of the eternal struggle between good and evil and of the wars that had enveloped the nations in times long past. I was determined to do what I could to prevent the mistakes of the past, even though the effort may prove futile.<br><br>
-                            
-                            Eventually I decided that enough information had been gathered for my purpose and I returned to the netherworlds of the Gods, leaving behind the tomes of knowledge and history I had gathered during my time as a mortal on Entia. I thought hard about the problems that plagued the races and after long reflection, I concluded that the solution was in the balance of all things, that the truth could be found in neither order nor chaos, but in a combination of the two. A number of the subtle schemes of Nixil also became evident to me, and I decided to remain as hidden from his influence as possible.<br><br>
-                            
-                            From then on I began to act as an invisible hand, guiding the races through the use of knowledge. I cautiously made myself known to a select few mortals who believed in the preservation of the races and I supplied them with knowledge that had previously been hidden from them, charging them to watch the races in an attempt to catch early signs of events that might upset the balance and lead to the destruction of the mortal realm. And so, to this day, I watch, subtly guiding with my invisible influence, hoping to maintain creation indefinitely.</p>
                             <p class="gods_name_right">Ceolan</p>
                         <img class="float_left card_img_gods" src="images/ceolan_a.png" alt="the god ceolan">
                         <p class="gods_info">
@@ -140,33 +238,6 @@
                 <p class="gods_title">The Watchers</p>
                 <div class="gods_desc">
                     
-                    <div class="gods_grid">
-                        <p class="gods_name_left">Kalehtur</p>
-                        <img class="float_right card_img_gods" src="images/kaletur_a.png" alt="the god kaletur">
-                        <p class="gods_info">Kalehtur is Minektur's vengeance. Stepping beyond what nature is in order to protect it, he manipulates existing entities and resources to achieve this goal, by all and any means neccessary. Born of Minektur's need, Kalehtur follows the myriad paths of good and evil to achieve his own balance in nature.<br><br><br><br>
-
-                            I have grown from weed to vine,
-and from vine to flowering bush.
-I have grown from a bush into a tree,
-and from that tree I grew into Kalehtur.<br><br>
-
-From the times of youth when I was just a seed,
-I saw things that I wish no child could ever perceive.
-Sap as rich as blood shrieks louder than any cry,
-yet still no man has grasped the warnings of the land.<br><br>
-
-The land shakes for a reason.
-It shakes to remind that what man lives on is not their own.<br><br>
-
-You have suffered time and again from misuse and abuse.
-From the thoughtless posturing of man.<br><br>
-
-It is time for the people to remember.
-It is time for Entia to change.
-It is time for Entia to grow.<br><br>
-
-I am here to protect you
-                            </p>
                             <p class="gods_name_right">Adrylin</p>
                         <img class="float_left card_img_gods" src="images/adrylin_a.png" alt="the god adrylin">
                         <p class="gods_info">
@@ -206,9 +277,7 @@ I am here to protect you
 
                     </div>
 
-                </div>
-
-            </div>
+                </div> -->
 
         </section>
            
@@ -218,11 +287,11 @@ I am here to protect you
         <div class="footer_spacer"></div>
         <div id="footer_nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#game_info">Game Info</a></li>
+                <li><a href="./index.html#welcome">Home</a></li>
+                <li><a href="./index.html#game_details">Game Info</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD">Contact</a></li>
+                <!-- <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li> -->
+                <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
                 
             </ul>
             
@@ -233,7 +302,7 @@ I am here to protect you
                 BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.
             </p>
             <p>
-                Connect to the game. We recommend getting a good mud client. You can find one <a href="http://www.mudconnect.com/resources/Mud_Resources:Mud_Clients.html">here</a>.
+                Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.
             </p>
         </div>
         <div class="footer_spacer"></div>

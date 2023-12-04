@@ -9,27 +9,29 @@
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <title>Black Mud: The Last Age</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
-    <link rel="stylesheet" type="text/css" href="style_pages.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+
+
+<body style="font-family:IMMORTAL">
     <header>
-        <div class="logo">
-            <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150" >
-            
-        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#game_info">Game Info</a></li>
-                
-                
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></li>
-            </ul>
+        	<div class="nav_container">
+            <div class="nav_logo">
+              <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150">
+            </div>
+            <div class="nav_menu">
+               <p><a href="#">Frequently&nbsp;Asked&nbsp;Questions</a></p>      
+            </div>
+            <div class="nav_text">
+            	<p><a href="index.html">Home</a></p>
+            </div>
+          </div>
         </nav>
-        <!--
-        <div class="gamestats_container">
+        
+<!-- 
+      <div class="gamestats_container">
             <a href="https://www.blackmud.com/pages/GameStats.php">
                 <div class="game_stats">
 
@@ -41,135 +43,132 @@
                 </div>
             </a>
         </div>
-        -->
+-->
+
     </header>
+    
     <main>
-        <div class="gen_block">
-            <p class="gen_label">
-                What is a MUD?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        MUD is an acronym meaning Multi-User Domain (some refer to it as Multi-User Dungeon, mostly because they can't get their heads out of the middle ages.) Basically, it's an online virtual realm. You can create a character, enter the realm, and interact with people from all over the world as well as the realm itself. There are NO graphics. It is a purely TEXT-based environment.<br><br>Although this may sound primitive to someone weened on most any other game out there, I would caution you to not underestimate the experience. The MUD's descriptions and ambiance can form pictures in your mind's eye, which fancy graphics cards can't even begin to touch. Pure imagination is a powerful media
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <section id="faq">
+        	<!--
+          <div class="rules_desc">John Locke wrote:<br> “The end of law is not to abolish or restrain, but to preserve and enlarge freedom.”<br><br>
+          	In an effort to perserve and enlarge freedoms in the game, BlackMUD has a set of foundational rules that govern game play and ensure the game itself does not undergo the Unmaking.
+          </div>
+          -->
+        	
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">What is a MUD?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	MUD is an acronym meaning Multi-User Domain or Multi-User Dungeon. MUDs are a test-based online virtual realm and the precursors to modern MMORPGs.
+                     	You can create a character, enter the realm, and interact with people from all over the world as well as the realm itself. There are generally no 
+                     	graphics, except ASCII based art and maps, and what you may encounter a MUD Client interface.<br>
+                     	Although this may sound primitive to someone weened on high definition graphics, I would caution you to not underestimate the experience. The MUD's 
+                     	descriptions and ambiance can form pictures in your mind's eye, which fancy graphics cards can't even begin to touch. Pure imagination is a powerful media.
+                     </p>
+                 </div>
+             </div>
+          </div> 
 
-        <div class="gen_block gen_block_evens">
-            <p class="gen_label">
-                What is Role-Playing?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        RP, as it is usually referred to, means just that... playing a role. You control the thoughts and actions of your character as if it were actually part of the realm. This is a rather in-depth topic which is clearly discussed in the Roleplaying section on the BlackMUD website <a href="rules.html">Rules Page</a>.
-                    </li>
-                </ul>
-            </div>
-        </div>
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">What is Role-Playing?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	Role-playing, or RP as it is usually referred to, means just that... playing a role. You control the thoughts and actions of your character as if it were actually part 
+                     	of the realm.
+                     </p>
+                 </div>
+             </div>
+          </div> 
+ 
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">How do I play?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	After creating your character (see below), you will see a list of options before actually entering the realm. New players who are unfamiliar with 
+                     	MUDs should take the time to go through the Mud Tutorial. As with most fantasy RPGs (role playing games), your character starts out rather weak 
+                     	and must advance in levels to get "tougher". BlackMUD uses a exp/level based advancement system very similar to most other RPGs.<br>
+                     	In simple terms:<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You kill stuff.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You get items and gold.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You gain experience points.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After you gain enough experience points, you can advance to your next level.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaining levels means more HP's, Mana, spells, skills, etc.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mix it all up with some nice RP to flesh it out.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have a blast doing it!<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repeat.
+                     </p>
+                 </div>
+             </div>
+          </div> 
+                 
+           <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">How do I win?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	BlackMUD is not a game you win or for that matter ends. It is a virtual alter-reality where everyday life is an adventure. Think of it a bit like 
+                     	a text-based cross between SIMs, Diablo, and Zork.
+                     </p>
+                 </div>
+             </div>
+          </div> 
+           
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">What's the story all about?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	I strongly suggest an in-depth read of the History either on the BlackMUD webpage (Click Here)or in-game via the history command. 
+                     	The realm of Entia is lavishly detailed, rich in content, and totally original.
+                     </p>
+                 </div>
+             </div>
+          </div> 
+ 
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">What commands can I use?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	Typing help will give you the main list of game commands. By typing help, you'll be given more in-depth information about each 
+                     	individual command and examples of its usage. If you run across any that are hard to find or not there, please notify BlackMUD 
+                     	Admin. You can send email to mudadmin@blackmud.com or you can use the pray command in the game to present your questions to an 
+                     	available immortal.
+                     </p>
+                 </div>
+             </div>
+          </div> 
+ 
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">How do I make a character?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	You can start the character generation process via the Enter the Realm link on the left side of the BlackMUD webpage. Or you can 
+                     	just telnet to: <a href="telnet://blackmud.com 2000">blackmud.com 2000</a>
+                     </p>
+                 </div>
+             </div>
+          </div> 
+ 
+          <div class="faq_block">
+             <div class="faq_card_block">
+                 <div class="faq_info_label">I can't think of a name? What should I call him/her?</div>
+                 <div class="faq_info_desc">
+                     <p>
+                     	It usually helps to have some idea of what kind of character you will be making before you get to this point. Names can often be 
+                     	elusive. If you're having difficulty choosing a name, I would suggest giving the Random Name Generator on the BlackMUD web page a 
+                     	try. You might just run across something you like or it might give you a good idea for one of your own.<br>
+                      Note: Please be aware that BlackMUD has a Name Policy which is strictly adhered to. The by-laws are presented during the character 
+                      creation steps or you can type help name while in the game.
+                     </p>
+                 </div>
+             </div>
+          </div> 
 
-        <div class="gen_block">
-            <p class="gen_label">
-                How do I win?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        BlackMUD is not a game you win or for that matter ends. It is a virtual alter-reality where everyday life is an adventure. Think of it a bit like a text-based cross between SIMs, Diablo, and Zork.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="gen_block gen_block_evens">
-            <p class="gen_label">
-                Then how do I play?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        
-
-    After creating your character (see below), you will see a list of options before actually entering the realm. New players who are unfamiliar with MUDs should take the time to go through the Mud Tutorial. As with most fantasy RPGs (role playing games), your character starts out rather weak and must advance in levels to get "tougher". BlackMUD uses a exp/level based advancement system very similar to most other RPGs. In simple terms:<br><br>
-
-
-    You kill stuff.<br>
-    You get items and gold.<br>
-    You gain experience points.<br>
-    After you gain enough experience points, you can advance to your next level.<br>
-    Gaining levels means more HP's, Mana, spells, skills, etc.<br>
-    Mix it all up with some nice RP to flesh it out.<br>
-    Have a blast doing it!<br>
-    Wash. Rinse. Repeat.
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="gen_block">
-            <p class="gen_label">
-                What's the story all about?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        I strongly suggest an in-depth read of the History either on the BlackMUD webpage (Click Here)or in-game via the history command. The realm of Entia is lavishly detailed, rich in content, and totally original.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="gen_block gen_block_evens">
-            <p class="gen_label">
-                What commands can I use?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        
-
-    Typing help will give you the main list of game commands. By typing help, you'll be given more in-depth information about each individual command and examples of its usage. If you run across any that are hard to find or not there, please notify BlackMUD Admin. You can send email to mudadmin@blackmud.com or you can use the pray command in the game to present your questions to an available immortal.<br><br>
-
-    Note: Please refrain from SPAMMING the pray channel. This tends to anger the immortals and will invoke their wrath upon your poor helpless mortal character.
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="gen_block">
-            <p class="gen_label">
-                How do I make a character?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        You can start the character generation process via the Enter the Realm link on the left side of the BlackMUD webpage. Or you can just telnet to: blackmud.com 2000
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="gen_block gen_block_evens">
-            <p class="gen_label">
-                I can't think of a name? What should I call him/her?
-            </p>
-            <div class="gen_info_block">
-                <ul>
-                    <li>
-                        
-
-    It usually helps to have some idea of what kind of character you will be making before you get to this point. Names can often be elusive. If you're having difficulty choosing a name, I would suggest giving the Random Name Generator on the BlackMUD web page a try. You might just run across something you like or it might give you a good idea for one of your own.<br><br>
-
-    Note: Please be aware that BlackMUD has a Name Policy which is strictly adhered to. The by-laws are presented during the character creation steps or you can type help name while in the game.
-
-                    </li>
-                </ul>
-            </div>
-        </div>
 
         <div class="gen_block">
             <p class="gen_label">
@@ -312,17 +311,18 @@
                 </ul>
             </div>
         </div>
-
+      </section>
     </main>
   
     <footer>
         <div class="footer_spacer"></div>
         <div id="footer_nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="faq.html">faq</a></li>
-                
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD">Contact</a></li>
+                <li><a href="./index.html#welcome">Home</a></li>
+                <li><a href="./index.html#game_details">Game Info</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <!-- <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li> -->
+                <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
                 
             </ul>
             
@@ -333,7 +333,7 @@
                 BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.
             </p>
             <p>
-                Connect to the game. We recommend getting a good mud client. You can find one <a href="http://www.mudconnect.com/resources/Mud_Resources:Mud_Clients.html">here</a>.
+                Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.
             </p>
         </div>
         <div class="footer_spacer"></div>

@@ -114,18 +114,6 @@ main {
     padding-bottom: 40px;
 }
 
-.card_img_gods {
-    width:30%;
-    align-self: flex-start;
-    max-width: 200px;
-    
-}
-
-.card_img_gods img {
-    width: 200px;
-    height: 200px;
-}
-    
     .card_block {
         display: flex;
         flex-direction: column;
@@ -163,23 +151,6 @@ main {
 } 
 
 
-.rules_block {
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: burlywood;
-    align-items: center;
-    justify-content: center;
-    background-color: #141414;
-    
-    
-}
-
-    .rules_block p {
-        width: 85%;
-        color:#808080;
-    }
 
 
 
@@ -282,56 +253,6 @@ footer .footer_mid_spacer {
 
 
 /* Gods */
-.gods_block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.gods_title {
-    font-size: 3rem;
-    color:goldenrod;
-    font-weight: bold;
-    
-}
-
-.gods_name_left {
-    color: goldenrod;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-left: 60px;
-    margin-bottom: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: goldenrod;
-    border-bottom-style: solid;
-}
-
-.gods_name_right {
-    color: goldenrod;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-right: 60px;
-    text-align: right;
-    margin-bottom: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: goldenrod;
-    border-bottom-style: solid;
-}
-
-.gods_desc {
-    color:#808080;
-    font-size: 1.5rem;
-}
-
-.gods_grid {
-    
-}
-
-.gods_info {
-    margin-bottom: 100px;
-    padding: 40px;
-}
 
 @font-face {
 font-family: "IMMORTAL";
