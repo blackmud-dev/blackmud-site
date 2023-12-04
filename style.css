@@ -262,6 +262,12 @@ nav {
         font-size: 2rem;
     }
 
+    .g_welcome_enter h4 {
+        display: block-inline;
+        justify-content: center;
+        text-decoration: none;
+    }
+
     .g_welcome_enter a {
         text-decoration: none;
     }
@@ -971,6 +977,55 @@ nav {
 .faq_info_desc {
     color: #141414;
     font-size: 1.25rem;
+}
+
+/* ================= resources.html css ==================*/
+#resources {
+    background-color: #E5E7E9;
+    padding-bottom: 30px;
+    padding-top: 150px;
+}
+
+.resources_label {
+    display: flex;
+    background-color: #141414;
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.resources_desc {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.resources_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.resources_card_img {
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    object-fit: none;
+}
+
+.resources_card_img img {
+    object-fit: none;
 }
 
 /* ============== page footer ============= */
