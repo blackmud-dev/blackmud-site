@@ -421,6 +421,7 @@ nav {
     color: #141414;
     font-size: 1.5rem;
     padding-right: 40px;
+    margin-top:10px;
 }
 
 #game_info #pantheon {
@@ -1075,8 +1076,28 @@ font-family: "IMMORTAL";
 url("IMMORTAL.ttf") format ("opentype");
 }
 
-/*
 @media screen and (max-width: 1420px){
+
+    .nav_container {
+    	  font-size: 1.5rem;
+    	}
+	
+    .g_welcome_intro {
+        font-size: 2.5rem;
+    }
+    
+    .g_welcome_hello {
+        font-size: 2rem;
+    }	
+
+    .g_welcome_summary {
+        font-size: 1.5rem;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        color:white;
+    }
+
     .g_info_image {
     
         width: 200px;
@@ -1092,7 +1113,6 @@ url("IMMORTAL.ttf") format ("opentype");
         min-width: 43%;
         height: 100%;
         border-radius: 10px;
-        
         
         margin: 20px;
         padding: 10px;
@@ -1127,9 +1147,81 @@ url("IMMORTAL.ttf") format ("opentype");
         height: 100%;
     }
     
+    .hist_label {
+        font-size: 2.0rem;
+    }
+
+    .hist_info_block {
+        font-size: 1.2rem;
+    }
+
+    .game_info_label {
+        font-size: 1.5rem;
+    }
+
+    .game_info_label_reverse {
+        font-size: 1.5rem;
+    }
+
+    .game_info_desc {
+        font-size: 1.2rem;
+    }
+
+    .g_races_play_list {
+        font-size: 1.5rem;
+    }
+
+    .g_races_play_list p {
+        font-size: 1rem;
+    }
+
+    .g_races_play_list p a {
+        padding: .7rem;
+    }
+
+    .raceinfo_desc {
+        font-size: 1.2rem;
+    }
+    
+    .classinfo_desc {
+        font-size: 1.2rem;
+    }
+
+    .classinfo_label {
+        font-size: 1.5rem;
+    }
+    
+    .gods_label {
+        font-size: 1.5rem;
+    }
+
+    #client {
+        font-size: 1rem;
+    }
+    
+    .rules_desc {
+    	  font-size: 1.2rem;
+    }
+    
+    .rules_info_label {
+        font-size: 1.5rem;
+    }
+    
+    .rules_info_desc p {
+        font-size: 1.2rem;
+    }
+    
+    .faq_info_label {
+        font-size: 1.2rem;
+    }
+
+    .faq_info_desc {
+        font-size: 1rem;
+    }
+     
 }
 
-
+/*
 @media screen and (max-width: 1280px) {
 
     .logo img {
