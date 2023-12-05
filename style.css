@@ -1711,5 +1711,31 @@ url("IMMORTAL.ttf") format ("opentype");
         width: 80%;
         
     }
+    
+/* iPhone */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .g_welcome_enter {
+    }
+
+    .g_welcome_enter h2 {
+        font-size: .5rem;
+    }
+
+    .g_welcome_enter h4 {
+    }
+
+    .g_welcome_enter a {
+    	color:red;
+    }
+
+    .g_welcome_enter img {
+    }
+  
+
+}
 
 } */
