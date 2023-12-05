@@ -9,43 +9,6 @@ ul {
     list-style-type: none;
 }
 
-/* header {
-    background-color: #070606;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-content: center;
-    position: fixed;
-    top: 0;
-    background-image: linear-gradient(to right, rgba(255,255,255,1), transparent 80%), url("images/banner_m.png");
-    background-size: cover;
-}
-
-header a {
-    color: #141414;
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    font-size: 1.5rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-weight: bold;
-    width: 100%;
-}
-
-    nav ul {
-        display: flex;
-        margin-bottom: 35px;
-        
-    }
-
-    nav ul li {
-        padding: 1rem;
-    }
-*/
-
 /* ============= common styles ============= */
 
 .card_block {
@@ -1099,7 +1062,6 @@ url("IMMORTAL.ttf") format ("opentype");
     }
 
     .g_info_image {
-    
         width: 200px;
         height: 200px;
         border-radius: 10px;
@@ -1195,10 +1157,6 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: 1.5rem;
     }
 
-    #client {
-        font-size: 1rem;
-    }
-    
     .rules_desc {
     	  font-size: 1.2rem;
     }
@@ -1218,10 +1176,17 @@ url("IMMORTAL.ttf") format ("opentype");
     .faq_info_desc {
         font-size: 1rem;
     }
-     
+    
+    .mapsinfo_label {
+        font-size: 1.5rem;
+    }
+
+    #client {
+        font-size: 1rem;
+    }
+    
 }
 
-/*
 @media screen and (max-width: 1280px) {
 
     .logo img {
@@ -1229,73 +1194,27 @@ url("IMMORTAL.ttf") format ("opentype");
         width: 100px;
     }
 
-    header {
-
+    .nav_container {
+    	  font-size: 1.2rem;
+    	}
+	
+    .g_welcome_intro {
+        font-size: 2rem;
     }
-
-    #welcome {
-        margin-top: 108.2px;
-        background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
-        height: 500px;
-    }
-
-    #enter_realm {
-        margin-top: 30px;
-    }
-
-    #enter_realm a img {
-        width: 175px;
-        height: 175px;
-    }
-
-    #enter_realm a h2 {
+    
+    .g_welcome_hello {
         font-size: 1.5rem;
-    }
+    }	
 
-    #who {
-        padding: 2.5rem;
-    }
-
-    #who #hello {
-        font-size: 2.5rem;
-    }
-
-    #who p {
-        font-size: 1.4rem;
-    }
-
-    #game_info {
-        padding-top: 40px;
-
-    }
-
-        #game_info a {
-            padding-bottom: 30px;
-        }
-
-  
-    #history {
-
-    }
-
-    .game_info_label {
-        font-size: 2.0rem;
-    }
-
-    .game_info_desc {
-        font-size: 1rem;
-    }
-
-    #game_info #classes {
-        padding-bottom: 30px;
-    }
-
-    #game_info #pantheon {
-        padding-bottom: 30px;
+    .g_welcome_summary {
+        font-size: 1.2rem;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        color:white;
     }
 
     .g_info_image {
-    
         width: 150px;
         height: 150px;
         border-radius: 10px;
@@ -1304,7 +1223,6 @@ url("IMMORTAL.ttf") format ("opentype");
     
     .g_info_block {
         display: flex;
-        background-color: white;
         width:40%;
         min-width: 40%;
         height: 100%;
@@ -1315,202 +1233,242 @@ url("IMMORTAL.ttf") format ("opentype");
         padding-right: 30px;
     }
     
-    .g_info_desc {
-        
-        
-    }
-    
     .g_info_title {
         display: flex;
         font-size: 1.8rem;
         padding: 10px;
-        border-bottom-style: solid;
-        border-bottom-color: #808080;
-        border-bottom-width: 1px;
         margin: 0px;
         justify-content: flex-end;
         margin-bottom: 30px;
     }
-    
+       
+    .g_info_desc {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: stretch;
+    }
+
     .g_info_text {
         font-size: 1.2rem;
         margin: 0px;
-        
-    }
-
-}
-
-@media screen and (max-width: 912px) {
-    
-
-    nav {
-        font-size: 0.8rem;
     }
     
-    .game_stats div img {
-        height: 25px;
-        width: 25px;
-
-    }
-
-    #p_client {
-        font-size: small;
-    }
-
-    #welcome {
-        margin-top: 103.5px;
-        background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
-        height: 300px;
-    }
-
-    #enter_realm {
-        margin-top: 30px;
-    }
-
-    #enter_realm a img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #enter_realm a h2 {
-        font-size: 1.0rem;
-    }
-
-    #who {
-        padding: 2.0rem;
-    }
-
-    #who #hello {
-        font-size: 2rem;
-    }
-
-    #who p {
-        font-size: 0.9rem;
-    }
-
-    #game_info {
-        padding-top: 30px;
-    }
-
-        #game_info a {
-            padding-bottom: 20px;
-        }
-
-    .card_img {
-        width: 75px;
-        height: 75px;
-    }
-
-    #history {
-
-    }
-
-    #game_info {
-        scroll-margin-top: 50px;
-    }
-
-    .game_info_label {
+    .hist_label {
         font-size: 1.5rem;
     }
 
+    .hist_info_block {
+        font-size: 1rem;
+    }
+
+    .game_info_label {
+        font-size: 1.2rem;
+    }
+
+    .game_info_label_reverse {
+        font-size: 1.2rem;
+    }
+
     .game_info_desc {
-        font-size: small;
+        font-size: 1rem;
     }
 
-    #game_info #classes {
-        padding-bottom: 20px;
+    .g_races_play_list {
+        font-size: 1.2rem;
     }
 
-    #game_info #rules {
-        padding-bottom: 50px;
-    }
-    #game_info #pantheon {
-        padding-bottom: 20px;
+    .g_races_play_list p {
+        font-size: .7rem;
     }
 
-    #game_info #maps {
-        padding-bottom: 50px;
+    .g_races_play_list p a {
+        padding: .5rem;
     }
 
-    footer {
-        padding-top: 20px;
-        padding-bottom: 80px;
+    .raceinfo_desc {
+        font-size: 1rem;
+    }
+    
+    .classinfo_desc {
+        font-size: 1rem;
     }
 
-        footer ul li {
-            padding: 4px;
-        }
+    .classinfo_label {
+        font-size: 1.2rem;
+    }
+    
+    .gods_label {
+        font-size: 1.2rem;
+    }
 
     #client {
-        font-size: small;
+        font-size: .7rem;
+    }
+    
+    .rules_desc {
+    	  font-size: 1rem;
+    }
+    
+    .rules_info_label {
+        font-size: 1.2rem;
+    }
+    
+    .rules_info_desc p {
+        font-size: 1rem;
+    }
+    
+    .faq_info_label {
+        font-size: 1rem;
+    }
+
+    .faq_info_desc {
+        font-size: .7rem;
+    }
+    
+    #client {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .logo img {
+        height: 75px;
+        width: 75px;
+    }
+
+    #welcome {
+        scroll-margin-top: 200px;
+    }
+    
+    .nav_container {
+    	  font-size: 1.2rem;
+    	}
+	
+    .g_welcome_intro {
+        font-size: 1.5rem;
+    }
+    
+    .g_welcome_hello {
+        font-size: 1.7rem;
+    }	
+
+    .g_welcome_summary {
+        font-size: 1.2rem;
+    }
+
+    .g_welcome_enter {
+    }
+
+    .g_welcome_enter h2 {
+        font-size: 1.5rem;
+    }
+
+    .g_welcome_enter h4 {
+    }
+
+    .g_welcome_enter a {
+    }
+
+    .g_welcome_enter img {
+        border-radius: 10px;
     }
 
     .g_info_image {
-    
-        width: 80px;
-        height: 80px;
+        width: 125px;
+        height: 125px;
         border-radius: 10px;
         margin-right: 20px;
     }
     
     .g_info_block {
-        display: flex;
-        background-color: white;
-        width:35%;
-        min-width: 35%;
-        height: 100%;
-        border-radius: 10px;
-        flex-shrink: 0;
-        margin: 20px;
-        padding: 10px;
-        padding-right: 30px;
-    }
-    
-    .g_info_desc {
-        
-        
     }
     
     .g_info_title {
-        display: flex;
-        font-size: 0.9rem;
-        padding: 5px;
-        border-bottom-style: solid;
-        border-bottom-color: #808080;
-        border-bottom-width: 1px;
-        
-        justify-content: flex-end;
-        margin-bottom: 10px;
+        font-size: 1.8rem;
     }
-    
-    .g_info_text {
-        font-size: 0.6rem;
-        margin: 0px;
-        
+       
+    .g_info_desc {
     }
 
-    .skill_name {
+    .g_info_text {
+        font-size: 1.2rem;
+    }
+    
+    .hist_label {
+        font-size: 1.2rem;
+    }
+
+    .hist_info_block {
+        font-size: .7rem;
+    }
+
+    .game_info_label {
         font-size: 1rem;
     }
 
-    .skills_header {
-        font-size: 1.5rem;
+    .game_info_label_reverse {
+        font-size: 1rem;
+    }
+
+    .game_info_desc {
+        font-size: .7rem;
+    }
+
+    .g_races_play_list {
+        font-size: 1rem;
+    }
+
+    .g_races_play_list p {
+        font-size: .5rem;
+    }
+
+    .g_races_play_list p a {
+        padding: .3rem;
+    }
+
+    .raceinfo_desc {
+        font-size: .7rem;
+    }
+    
+    .classinfo_desc {
+        font-size: .7rem;
     }
 
     .classinfo_label {
-        display: flex;
-        padding: 30px;
-        background-color: #141414;
-        color: orange;
-        font-size: 1.5rem;
-        font-weight: bold;
-        justify-content: center;
-        margin-top: 0px;
-        padding: 30px;
-        margin-top: 150px;
+        font-size: 1rem;
+    }
+    
+    .gods_label {
+        font-size: 1rem;
     }
 
-} */
+    .rules_desc {
+    	  font-size: .7rem;
+    }
+    
+    .rules_info_label {
+        font-size: 1rem;
+    }
+    
+    .rules_info_desc p {
+        font-size: .7rem;
+    }
+    
+    .faq_info_label {
+        font-size: .7rem;
+    }
+
+    .faq_info_desc {
+        font-size: .7rem;
+    }
+
+    #client {
+        font-size: .7rem;
+    }
+} 
+
 /*
 @media  screen and (max-width: 624px) {
     .gamestats_container {
