@@ -214,6 +214,7 @@ ul {
   justify-content: center;
   align-items: center;
   font-family:IMMORTAL;
+  font-size: 2rem;
 }
 
     .g_welcome_enter h2 {
@@ -229,16 +230,32 @@ ul {
         display: block-inline;
         justify-content: center;
         text-decoration: none;
+
     }
 
     .g_welcome_enter a {
         text-decoration: none;
+        color:white;
+        text-shadow: 1px 1px 2px darkred;
+        text-align:center;
     }
 
     .g_welcome_enter img {
         border-radius: 10px;
     }
 
+.g_need_client h4 {
+    display: block-inline;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.g_need_client a {
+    text-decoration: none;
+    color:white;
+    text-shadow: 1px 1px 2px darkred;
+    text-align:center;
+}
 
 /*  ============= social media link area ============= */
 #social {
@@ -1717,9 +1734,15 @@ url("IMMORTAL.ttf") format ("opentype");
 
     
     .nav_container {
-        display: flex;
+        display: flex-start;
     }
 	
+    	.g_welcome_frame {
+        height: 300px;
+        display: flex;
+        margin-top: 95px;
+    }
+
     .g_welcome_name {
       font-size: 1.2rem;
     }	
@@ -1733,23 +1756,21 @@ url("IMMORTAL.ttf") format ("opentype");
     }
 
     .g_welcome_enter h2 {
-        font-size: .5rem;
-    }
-
-    .g_welcome_enter h4 {
-    }
-
-    .g_welcome_enter a {
+        font-size: 1rem;
     }
 
     .g_welcome_enter img {
     	  width: 125px;
      	  height: 125px;
-  }
+    }
   
+    .g_need_client h4 {
+        font-size: .5rem;
+    }
+    
     .nav_logo img {
-        width: 100px;
-        height: 100px;
+        width: 65px;
+        height: 65px;
     }
 
 }
