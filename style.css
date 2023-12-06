@@ -1734,7 +1734,7 @@ url("IMMORTAL.ttf") format ("opentype");
 
     
     .nav_container {
-        position: absolute;
+        position: sticky;
         top: 0px; left: 0px;
     }
 	
