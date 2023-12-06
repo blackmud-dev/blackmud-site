@@ -1736,8 +1736,6 @@ url("IMMORTAL.ttf") format ("opentype");
     .nav_container {
         position: absolute;
         top: 0px; left: 0px;
-        background-image:none;
-        background-color: black;
     }
 	
     	.g_welcome_frame {
