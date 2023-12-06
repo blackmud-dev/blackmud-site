@@ -1734,9 +1734,8 @@ url("IMMORTAL.ttf") format ("opentype");
 
     
     .nav_container {
-        display: flex-start;
+        justify-content: flex-start;
         background-image:none;
-        
         background-color: black;
     }
 	
