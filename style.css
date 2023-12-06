@@ -139,7 +139,7 @@ ul {
 
 .g_welcome_frame {
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: flex;
     background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
     background-position: top;
@@ -179,22 +179,6 @@ ul {
     margin-bottom: 0px;
     margin-left: 20px;
     color:white;
-}
-
-.g_welcome {
-    column-count: 2;
-    display: flex;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.g_welcome :first-child {
-  align-self: center;
-}
-
-.g_welcome :second-child {
-  align-self: center;
 }
 
 .g_welcome_box {
@@ -290,12 +274,6 @@ ul {
     scroll-margin-top: 175px;
 }
 
-#game_details a {
-    display: flex;
-    text-decoration: none;
-    color: #141414;
-}
-
 .content {
     background-color: black;
 }
@@ -305,16 +283,6 @@ ul {
     height: 250px;
     border-radius: 10px;
     margin-right: 20px;
-}
-
-.g_info_image_new {
-    
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin-right: 20px;
-    align-items: center;
-    justify-content: center;
 }
 
 .g_info_block {
@@ -342,7 +310,6 @@ ul {
     margin: 20px;
     padding: 10px;
     padding-right: 30px;
-    font-family:IMMORTAL;
 }
 
 .g_info_b_new :first-child {
@@ -351,13 +318,19 @@ ul {
 
 .g_info_desc {
     display: flex;
-    height: 100%;
     flex-direction: column;
+    height: 100%;
     padding-bottom: 20px;
 }
 
-.g_info_title {
+.g_info_desc a {
     display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #141414;
+}
+
+.g_info_title {
     font-size: 2.5rem;
     padding: 10px;
     border-bottom-style: solid;
@@ -1736,11 +1709,28 @@ url("IMMORTAL.ttf") format ("opentype");
     .nav_container {
         top: 0px; left: 0px;
     }
-	
-    	.g_welcome_frame {
-        height: 300px;
-        display: flex;
+	  
+    #welcome {
+
+    }
+    	
+    .g_welcome_frame {
+        display: grid;
         margin-top: 95px;
+        background-attachment: scroll;
+        background-size: cover;
+        grid-auto-rows: min-content;
+        gap: 0;
+        height: 100%;
+
+    }
+    
+    .g_welcome_intro {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .g_welcome_name {
@@ -1749,6 +1739,11 @@ url("IMMORTAL.ttf") format ("opentype");
 
     .g_welcome_summary {
       font-size: 1rem;
+    }
+
+    .g_welcome_enter_frame {
+        margin-bottom: 30px;
+    	
     }
 
     .g_welcome_enter {
@@ -1773,6 +1768,22 @@ url("IMMORTAL.ttf") format ("opentype");
         height: 65px;
     }
 
-}
+    .g_info_b_new {
+        column-count: 1;
+        display: inline-grid;
+        padding-right: 10px;
+        align-self: center;
+    }
+
+    .g_info_b_new :first-child {
+    }
+
+    .g_info_image {
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 } */
