@@ -88,8 +88,8 @@ ul {
         display: flex;
         width: 100%;
 	      text-decoration: none;
-        padding: 1rem;
         color: #141414;
+        padding: 1rem;
     }
 
 .nav_text {
@@ -102,9 +102,9 @@ ul {
     .nav_text p a {
         width: 100%;
 	      text-decoration: none;
+        color: black;
         padding: 1rem;
         align-self: end;
-        color: black;
     }
    
  
@@ -986,7 +986,7 @@ ul {
 footer {
     display: flex;
     
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 140px;
     justify-content: space-evenly;
     background: linear-gradient(#141414, #070606);
@@ -997,6 +997,9 @@ footer {
     color: burlywood;
     align-self: center;
     font-size: larger;
+   	display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
@@ -1021,8 +1024,22 @@ footer a {
 }
 
 #footer_nav {
-    width: 10%;
+    width: 100%;
 }
+
+.page_footer {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_footer_links {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
 
 @font-face {
 font-family: "IMMORTAL";
@@ -1708,12 +1725,22 @@ url("IMMORTAL.ttf") format ("opentype");
     
     .nav_container {
         top: 0px; left: 0px;
+        font-size: 1.2rem;
     }
 	  
-    #welcome {
-
+	  .nav_menu p a {
+        font-size: 1.2rem;
+        padding: .5rem;
     }
-    	
+
+    .nav_text {
+        padding: 0;
+    }
+	
+    .nav_text p {
+        padding: 0;
+    }
+	
     .g_welcome_frame {
         display: grid;
         margin-top: 95px;
@@ -1783,7 +1810,52 @@ url("IMMORTAL.ttf") format ("opentype");
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .game_info_label {
+        font-size: .7rem;
+    }
+    
+    .game_info_desc {
+        font-size: .5rem;
     }
 
+    .g_info_title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+       
+    .g_info_desc {
+        padding-bottom: 0px;
+    }
+
+    .g_info_text {
+        font-size: .8rem;
+        padding-bottom: 0px;
+    }
+
+    .page_footer {
+        column-count: 1;
+        display: inline-grid;
+        align-self: center;
+    }
+    
+    .page_footer_links {
+        margin-right: 0;	
+    }
+
+    .footer_nav {
+        width: 100%;	
+    }
+    
+    #client {
+        width: 100%;
+    }
+    
+    #client p {
+        text-align: center;
+    }
 
 } */
