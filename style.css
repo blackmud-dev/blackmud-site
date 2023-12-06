@@ -166,7 +166,7 @@ ul {
     margin-right: 30px;
 }
 
-.g_welcome_hello {
+.g_welcome_name {
     font-size: 3rem;
     justify-content: center;
     color:white;
@@ -1713,11 +1713,18 @@ url("IMMORTAL.ttf") format ("opentype");
     }
     
 /* iPhone */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) {
+@media only screen and (max-width:632px) {
+
+    .g_welcome_name {
+      font-size: 1.2rem;
+    }	
+
+    .g_welcome_summary {
+      font-size: 1rem;
+    }
 
     .g_welcome_enter {
+        color:red;
     }
 
     .g_welcome_enter h2 {
@@ -1728,12 +1735,17 @@ url("IMMORTAL.ttf") format ("opentype");
     }
 
     .g_welcome_enter a {
-    	color:red;
     }
 
     .g_welcome_enter img {
-    }
+    	  width: 125px;
+     	  height: 125px;
+  }
   
+    .nav_logo img {
+        width: 100px;
+        height: 100px;
+    }
 
 }
 
