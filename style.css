@@ -1510,6 +1510,14 @@ url("IMMORTAL.ttf") format ("opentype");
     #welcome {
         scroll-margin-top: 0px;
     }
+    
+    #game_details {
+        scroll-margin-top: 0px;
+    }
+
+    #social {
+        scroll-margin-top: 0px;
+    }
     	
     .g_welcome_frame {
         display: grid;
