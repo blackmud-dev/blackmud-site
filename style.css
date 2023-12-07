@@ -49,12 +49,11 @@ ul {
     background-image: linear-gradient(to right, rgba(255,255,255,1), transparent 80%), url("images/banner_m.png");
     background-position: top;
     background-attachment: fixed;
-    background-origin: border-box;
     background-repeat: no-repeat;
 	}
 
 .nav_container :first-child {
-  align-self: start;
+  align-self: center;
 }
 
 .nav_container :second-child {
@@ -83,7 +82,9 @@ ul {
 	  display: flex;
 	  align-items: center;
     justify-content: space-evenly;
+    font-size: 2rem;
 }
+
     .nav_menu p a {
         display: flex;
         width: 100%;
@@ -97,6 +98,7 @@ ul {
 	  padding: 1rem;
 	  text-align: center;
 	  align-self: center;
+    font-size: 2rem;	  
 }
 
     .nav_text p a {
@@ -638,16 +640,26 @@ ul {
 }
 
 .hist_label {
-    font-size: 2.5rem;
+    font-size: 2rem;
     align-self: center;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .hist_label p {
     color: white;
     text-shadow: 1px 1px 2px black;
     margin: 0;
+}
+
+.hist_label_evens {
+    font-size: 2rem;
+    align-self: center;
+}
+
+.hist_label_evens p {
+    color: white;
+    text-shadow: 1px 1px 2px grey;
 }
 
 .hist_info_block {
@@ -665,7 +677,6 @@ ul {
 
 .hist_block_evens {
     background-color: #141414;
-
 }
 
 .hist_info_b_evens {
@@ -677,16 +688,6 @@ ul {
 
 .hist_info_b_evens p {
     margin-left: 2%;
-    color: white;
-    text-shadow: 1px 1px 2px grey;
-}
-
-.hist_label_evens {
-    font-size: 2.5rem;
-    align-self: center;
-}
-
-.hist_label_evens p {
     color: white;
     text-shadow: 1px 1px 2px grey;
 }
@@ -971,6 +972,12 @@ ul {
     margin-top: 30px;
 }
 
+.resources_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .resources_card_img {
     border-radius: 10px;
     margin-left: 30px;
@@ -978,9 +985,6 @@ ul {
     object-fit: none;
 }
 
-.resources_card_img img {
-    object-fit: none;
-}
 
 /* ============== page footer ============= */
 footer {
@@ -1476,256 +1480,18 @@ url("IMMORTAL.ttf") format ("opentype");
     }
 } 
 
-/*
-@media  screen and (max-width: 624px) {
-    .gamestats_container {
-        display: none;
-    }
-
-    header {
-        background-color: #070606;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .logo img {
-        width: 200px;
-        height: 200px;
-    }
-
-    nav ul {
-        margin-bottom: 10px;
-        padding: 0;
-        justify-content: space-between;
-    }
-
-    nav ul li {
-        padding: 10px;
-    }
-
-    #welcome {
-        margin: 0;
-        height: 600px;
-        background-image: linear-gradient(0deg, #141414 40%, transparent 80%), url("images/makilor_a_narrow.png");
-        background-position: top;
-        background-attachment: fixed;
-        background-size: contain;
-        background-origin: border-box;
-        background-repeat: no-repeat;
-        flex-direction: column;
-        align-items: center;
-        width: 100%
-    }
-
-    #who {
-        padding: 0;
-        max-width: 80%;
-    }
-
-        #who #hello {
-            font-size: 1.5rem;
-            margin: 0.5rem;
-        }
-
-        #who p {
-            font-size: small;
-            text-align: center;
-            padding: 0;
-            margin: 0;
-        }
-
-    #enter_realm {
-        align-self: center;
-        margin: 0;
-        padding:0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family:IMMORTAL;
-    }
-
-        #enter_realm a img {
-            /* padding-left: 0.6rem; */
-/*        }
-
-        #enter_realm a h2 {
-            padding-bottom: 10px;
-        }
-
-    #social {
-        height: 30px;
-    }
-
-    #game_info {
-        margin: auto 0;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-
-    #history {
-        justify-content: center;
-        width: 100%;
-        height: 150px;
-    }
-
-    .card_block {
-        width: 65%;
-        padding-left: 5%;
-    }
-
-    #races {
-        justify-content: center;
-        width: 100%;
-        height: 150px;
-    }
-
-    #classes {
-        justify-content: center;
-        width: 100%;
-        height: 150px;
-    }
-
-    #rules {
-        justify-content: center;
-        width: 100%;
-        height: 150px;
-    }
-
-    #game_info #classes {
-        justify-content: center;
-        padding-bottom: 50px;
-        width: 100%;
-    }
-
-    #game_info #rules {
-        justify-content: center;
-        padding-bottom: 50px;
-        width: 100%;
-    }
-
-    #game_info #pantheon {
-        justify-content: center;
-        padding-bottom: 50px;
-        width: 100%;
-        height: 150px;
-    }
-
-    #game_info #maps {
-        justify-content: center;
-        padding-bottom: 50px;
-        width: 100%;
-        height: 150px;
-    }
-    
-    #game_info a {
-        padding-bottom: 50px;
-    }
-
-    .game_info_label {
-        width: 40%;
-        align-self: center;
-    }
-
-
-    footer {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    footer .footer_mid_spacer {
-        display: none;
-    }
-
-    .footer_spacer {
-        display: none;
-    }
-
-    #client {
-        width: 60%;
-    }
-
-    ul {
-        padding: 0;
-        padding-right: 5%;
-    }
-    
-    .g_info_image {
-    
-        width: 100px;
-        height: 100px;
-        border-radius: 10px;
-        margin-right: 20px;
-    }
-    
-    .g_info_block {
-        display: flex;
-        background-color: white;
-        width:80%;
-        min-width: 40%;
-        height: 100%;
-        border-radius: 10px;
-        flex-shrink: 0;
-        margin: 20px;
-        padding: 10px;
-        padding-right: 30px;
-    }
-    
-    .g_info_desc {
-        
-        
-    }
-    
-    .g_info_title {
-        display: flex;
-        font-size: 1.3rem;
-        padding: 5px;
-        border-bottom-style: solid;
-        border-bottom-color: #808080;
-        border-bottom-width: 1px;
-        margin: 0px;
-        justify-content: flex-end;
-        margin-bottom: 10px;
-    }
-    
-    .g_info_text {
-        font-size: 0.8rem;
-        margin: 0px;
-        
-    }
-
-    .skill_name {
-        font-size: 0.8rem;
-    }
-
-    .skills_header {
-        font-size: 0.8rem;
-    }
-
-    .skills_grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
-        width: 80%;
-        
-    }
-    
-/* iPhone */
 @media screen and (max-width:632px) {
 
     
     .nav_container {
-        top: 0px; left: 0px;
         font-size: 1.2rem;
+        top : 0px;
+    }
+
+    .nav_logo img {
+        width: 50%;
+        height: 50%;
+     	  padding-top: 0;
     }
 	  
 	  .nav_menu p a {
@@ -1735,6 +1501,7 @@ url("IMMORTAL.ttf") format ("opentype");
 
     .nav_text {
         padding: 0;
+        font-size: 1.2rem;
     }
 	
     .nav_text p {
@@ -1790,11 +1557,6 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: .5rem;
     }
     
-    .nav_logo img {
-        width: 65px;
-        height: 65px;
-    }
-
     .g_info_b_new {
         column-count: 1;
         display: inline-grid;
@@ -1835,7 +1597,96 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: .8rem;
         padding-bottom: 0px;
     }
+    
+    #resources {
+        padding-top: 75px; 	
+    }
+    
+    .resources_block {
+        column-count: 1;
+        display: inline-grid;
+        padding-right: 10px;
+        align-self: center;
+        margin-right: 0;
+        padding-right: 0;
+    }
 
+    .resources_label {
+        font-size: 1.5rem;
+    }
+
+    .resources_label p {
+        margin: 10px;
+    }
+
+    .resources_desc {
+        font-size: 3.5rem;
+    }
+
+    .resources_card {
+    }
+
+    .resources_card_img {
+        border-radius: 10px;
+    }
+
+    .resources_card_img img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .card_block {
+       margin-left: 20px;	
+    }
+     
+    #history {
+        padding-top: 75px;
+    }
+
+    .hist_label {
+        font-size: 1rem;
+    }
+
+    .hist_info_block {
+        font-size: .7rem;
+        display: inline-grid;
+        align-self: center;
+    }
+
+    .hist_info_block img {
+        display: none
+    }
+
+    #maps {
+        padding-top: 75px;
+    }
+    
+    .mapsinfo_label {
+        font-size: 1.2rem;
+    }
+    
+    .balric_container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .balric_container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .entia_container {
+        margin-top: 30px;
+    }
+
+    .entia_container img {
+       width: 80%;
+    }
+     
     .page_footer {
         column-count: 1;
         display: inline-grid;
