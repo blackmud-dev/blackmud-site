@@ -1481,10 +1481,12 @@ url("IMMORTAL.ttf") format ("opentype");
 
 @media screen and (max-width:632px) {
 
-    
+   
     .nav_container {
         font-size: 1.2rem;
-        top : 0px;
+        background-image: none;
+        background-color: white;
+        background-attachment: scroll;
     }
 
     .nav_logo img {
