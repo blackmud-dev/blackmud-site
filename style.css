@@ -1112,7 +1112,7 @@ footer a {
 
 @font-face {
 font-family: "IMMORTAL";
-url("IMMORTAL.ttf") format ("opentype");
+url("IMMORTAL.ttf") format ("truetype");
 }
 
 @media screen and (max-width: 1420px){
@@ -1541,7 +1541,6 @@ url("IMMORTAL.ttf") format ("opentype");
 } 
 
 @media screen and (max-width:632px) {
-
    
     .nav_container {
         font-size: 1.2rem;
