@@ -17,13 +17,13 @@
         <nav>
         	<div class="nav_container">
             <div class="nav_logo">
-              <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150">
+              <a href="index.html"><img src="images/logo_modified_t.png" alt="BlackMud Logo"></a>
             </div>
             <div class="nav_menu">
                <p><a href="gods.html">The&nbsp;Pantheon</a></p>
             </div>
             <div class="nav_text">
-            	<p><a href="index.html">Home</a></p>
+            	<p><a href="#">Top</a></p>
             </div>
           </div>
         </nav>
@@ -46,6 +46,7 @@
         <section id="gods">
         	
         	  <!--
+        	  <div>
             <p class="classinfo_label">
                 Classes of Entia
             </p>
@@ -57,11 +58,14 @@
             It is not necessary to sub-class, however once you have joined a new guild there is no leaving it.  Once you join a subclass, you can 
             no longer practice your old skills/spells, however you can still use them and learn them by usage.
             </p>
+            </div>
             -->
             <div id="oldgods" class="gods_label"><p>The Elder Gods</p></div>
             
             <div id="phaet" class="gods_block">
-                <img class="card_img" src="images/phaet_a.png" alt="Phaet - The Creator" width="150" height="150" >
+                  <div class="gods_card">
+                     <img src="images/phaet_a.png" alt="Phaet - The Creator">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Phaet</div>
                         <p class="game_info_desc">
@@ -83,7 +87,9 @@
             </div>
                   
             <div id="nixil" class="gods_block">
-                <img class="card_img" src="images/nixel_d.png" alt="Nixil - The Un-Creator - He Who Dwells" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/nixel_d.png" alt="Nixil - The Un-Creator - He Who Dwells" >
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Nixil</div>
                         <p class="game_info_desc">
@@ -119,7 +125,9 @@
             <div id="theascended" class="gods_label"><p>The Ascended</p></div>
             
             <div id="minektur" class="gods_block">
-                <img class="card_img" src="images/minketur_a.png" alt="Minektur - God of Balance" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/minketur_a.png" alt="Minektur - God of Balance">
+                  </div>            	
                   <div class="card_block">
                         <div class="game_info_label">Minektur</div>
                         <p class="game_info_desc">
@@ -140,7 +148,9 @@
             </div>        
             
             <div id="vylar" class="gods_block">
-                <img class="card_img" src="images/vylar_a.png" alt="Vylar - The Watcher" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/vylar_a.png" alt="Vylar - The Watcher">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Vylar</div>
                         <p class="game_info_desc">
@@ -173,7 +183,9 @@
             </div>
             
             <div id="Kalehtur" class="gods_block">
-                <img class="card_img" src="images/kaletur_a.png" alt="Kalehtur - Nature's Vengence" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/kaletur_a.png" alt="Kalehtur - Nature's Vengence">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Kalehtur</div>
                         <p class="game_info_desc">
@@ -195,7 +207,9 @@
             </div>   
 
             <div id="Grolgar" class="gods_block">
-                <img class="card_img" src="images/grolgar_a.png" alt="Grolgar" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/grolgar_a.png" alt="Grolgar">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Grolgar</div>
                         <p class="game_info_desc">
@@ -205,7 +219,9 @@
             </div>   
 
             <div id="Mirath" class="gods_block">
-                <img class="card_img" src="images/mirath.png" alt="Mirath" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/mirath.png" alt="Mirath">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Mirath</div>
                         <p class="game_info_desc">
@@ -213,9 +229,13 @@
                         </p>
                   </div>
             </div>   
-
+                
+            <div id="theascended" class="gods_label"><p>The Watchers</p></div>
+            
             <div id="Moxart" class="gods_block">
-                <img class="card_img" src="images/missing_image.png" alt="Moxart" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/missing_image.png" alt="Moxart">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Moxart</div>
                         <p class="game_info_desc">
@@ -224,30 +244,10 @@
                   </div>
             </div>   
 
- <!--
-            <div id="Ceolan" class="gods_block">
-                <img class="card_img" src="images/missing_image.png" alt="Ceolan" width="150" height="150" >
-                  <div class="card_block">
-                        <div class="game_info_label">Ceolan</div>
-                        <p class="game_info_desc">
-                         Not satisfied with all the knowledge he had learned, the alchemist suggested that he seek out the practice of wizardry and send him 
-                         to speak with Tigana Nobloc, a wizardess of great renown. Here, Ceolan had finally found what he was looking for. She taught him how 
-                         to manipulate the elements that the alchemist had shown him, defying gravity; conjuring fire manipulating matter; and best of all, 
-                         controlling electrical energy, with a snap of his fingers.<br>
-                         After years of adventures throughout the land, felling trees and demons, and evil doers with a flick of the wrist, Ceolan grew tired 
-                         of his powers and retreated to the northern forests, only using them on rare occasions.<br>
-                         One day, while in the woods hunting for rabbit, a loud cash, more thunderous than anything he'd ever heard before froze him in his skin. 
-                         A large puff of smoke billowed from behind a tree and out stepped a mystical figure. To Ceolan's amazement, the being introduced himself 
-                         as Phaet, the Creator. Phaet spoke with Ceolan for hours on end, often admiring his dedication to the nature of the elements and his 
-                         fascination with the Heavens, eventually offering him a chance to renew his passion, to be the master of the elements from the Heavens 
-                         themselves.<br>
-                         So, Ceolan abandoned his rustic shack and his hermit-like existence in the woods, and took his place among the Immortals, ruling the elements.
-                        </p>
-                  </div>
-            </div>   
-
             <div id="Adrylin" class="gods_block">
-                <img class="card_img" src="images/missing_image.png" alt="Adrylin" width="150" height="150" >
+            	    <div class="gods_card">
+                     <img src="images/adrylin_a.png" alt="Adrylin">
+                  </div>
                   <div class="card_block">
                         <div class="game_info_label">Adrylin</div>
                         <p class="game_info_desc">
@@ -288,41 +288,68 @@
                         </p>
                   </div>
             </div>   
+
+ <!--
+            <div id="Ceolan" class="gods_block">
+                <img class="card_img" src="images/missing_image.png" alt="Ceolan" width="150" height="150" >
+                  <div class="card_block">
+                        <div class="game_info_label">Ceolan</div>
+                        <p class="game_info_desc">
+                         Not satisfied with all the knowledge he had learned, the alchemist suggested that he seek out the practice of wizardry and send him 
+                         to speak with Tigana Nobloc, a wizardess of great renown. Here, Ceolan had finally found what he was looking for. She taught him how 
+                         to manipulate the elements that the alchemist had shown him, defying gravity; conjuring fire manipulating matter; and best of all, 
+                         controlling electrical energy, with a snap of his fingers.<br>
+                         After years of adventures throughout the land, felling trees and demons, and evil doers with a flick of the wrist, Ceolan grew tired 
+                         of his powers and retreated to the northern forests, only using them on rare occasions.<br>
+                         One day, while in the woods hunting for rabbit, a loud cash, more thunderous than anything he'd ever heard before froze him in his skin. 
+                         A large puff of smoke billowed from behind a tree and out stepped a mystical figure. To Ceolan's amazement, the being introduced himself 
+                         as Phaet, the Creator. Phaet spoke with Ceolan for hours on end, often admiring his dedication to the nature of the elements and his 
+                         fascination with the Heavens, eventually offering him a chance to renew his passion, to be the master of the elements from the Heavens 
+                         themselves.<br>
+                         So, Ceolan abandoned his rustic shack and his hermit-like existence in the woods, and took his place among the Immortals, ruling the elements.
+                        </p>
+                  </div>
+            </div>   
 -->
         </section>
            
     </main>
   
     <footer>
+    	<div class="page_footer">
         <div class="footer_spacer"></div>
-        <div id="footer_nav">
-            <ul>
-                <li><a href="./index.html#welcome">Home</a></li>
-                <li><a href="./index.html#game_details">Game Info</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./resources.html">Resources</a></li>
-                <!-- <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li> -->
-                <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
-            </ul>
-            
-        </div>
-        <div id="footer_nav2">
-            <ul>
-                <li><a href="./history.html">Lore & History</a></li>
-                <li><a href="./maps.html">World</a></li>
-                <li><a href="./races.html">Races</a></li>
-                <li><a href="./races.html">Classes</a></li>
-                <li><a href="./races.html">Pantheon</a></li>
-                <li><a href="./races.html">Policies</a></li>
-            </ul>
-        </div>
-        <div class="footer_mid_spacer"></div>
-        <div id="client">
-            <p>BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.</p>
-            <p>Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.</p>
-            <p>©2023 BlackMUD Development Group</p>
-        </div>
-        <div class="footer_spacer"></div>
+          <div class="page_footer_links">
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="./index.html#welcome">Home</a></li>
+                    <li><a href="./index.html#game_details">Game Info</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                    <!-- <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li> -->
+                    <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
+                    <li><a href="">&nbsp;</a></li>
+                </ul>
+                
+            </div>
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="./history.html">Lore & History</a></li>
+                    <li><a href="./maps.html">World</a></li>
+                    <li><a href="./races.html">Races</a></li>
+                    <li><a href="./races.html">Classes</a></li>
+                    <li><a href="./races.html">Pantheon</a></li>
+                    <li><a href="./races.html">Policies</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="footer_mid_spacer"></div>
+          <div id="client">
+              <p>BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.</p>
+              <p>Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.</p>
+              <p>©2023 BlackMUD Development Group</p>
+          </div>
+          <div class="footer_spacer"></div>
+      </div>
     </footer>
 </body>
 </html>

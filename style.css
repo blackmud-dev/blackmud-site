@@ -14,23 +14,18 @@ ul {
 .card_block {
     display: flex;
     flex-direction: column;
-    font-family:IMMORTAL;
     text-shadow: 1px 1px 2px grey;
-    width: 100%;
+    margin: 0px 30px 0px 0px;
 }
 
 .card_img {
     border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
     width: 200px;
     height: 200px;
 }
 
 .card_img_reverse {
     border-radius: 10px;
-    margin-left: 30px;
-    margin-right: 60px;
     width: 200px;
     height: 200px;
 }
@@ -71,8 +66,8 @@ ul {
 }
 
 .nav_logo img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
 	  text-align: center;
 	  align-self: center;
 	  padding-top: 1rem;
@@ -92,6 +87,22 @@ ul {
         color: #141414;
         padding: 1rem;
     }
+
+.nav_menu_classes {
+	  display: flex;
+	  align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+    .nav_menu_classes p a {
+        display: flex;
+        width: 100%;
+	      text-decoration: none;
+        color: #141414;
+        padding: 1rem;
+    }
+
 
 .nav_text {
     width: 100%;
@@ -151,7 +162,7 @@ ul {
     transform-origin: center;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 .g_welcome_intro {
@@ -355,7 +366,6 @@ ul {
     border-bottom-color: #141414;
     border-bottom-width: 2px;
     font-size: 2rem;
-    padding-right: 40px;
     font-weight: bold;
     margin-right: 30px;
 }
@@ -374,7 +384,6 @@ ul {
 .game_info_desc {
     color: #141414;
     font-size: 1.5rem;
-    padding-right: 40px;
     margin-top:10px;
 }
 
@@ -407,30 +416,28 @@ ul {
 
 /* ================= races.html css ==================*/
 
-#gorboc, #wep, #gorboc, #human, #dwarf, #tarr, #half-giant, #half-orc, #mirlad, #elf, #halfling, #half-elf, #giant, #ogre, #orc, #gralner {
-    scroll-margin-top: 200px;
+#human, #dwarf, #tarr, #half-giant, #half-orc, #gorboc, #wep, #gorboc, #mirlad, #elf, #halfling, #half-elf, #giant, #ogre, #orc, #gralner {
+    scroll-margin-top: 150px;
 }
 
 #races_play_list, #races_noplay_list {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 150px;
 }
 
 #races_info {
     width: 100%;
-    margin: 0 auto;
+    margin-top: 110px;
     display: inline-block;
 }
 
 .raceinfo_label {
 	  display: flex;
-    padding: 30px;
+    padding: 20px;
     background-color: #141414;
     color: orange;
     font-size: 2rem;
     font-weight: bold;
     justify-content: center;
-    margin-top: 150px;
-    padding: 30px;
     text-shadow: 1px 1px 2px grey;
 }
 
@@ -470,6 +477,23 @@ ul {
     text-shadow: 1px 1px 1px grey;
 }
 
+.races_card {
+    display: flex-start;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.races_card_img {
+    justify-content: center;
+    align-items: center;
+}
+
+.races_card img {
+    border-radius: 10px;
+    width: 200px;
+    height:200px;
+}
+
 .g_races_play_list {
 	  display: flex;
     flex-direction: column;
@@ -491,7 +515,9 @@ ul {
 .g_races_play_list p a {
     color: orange;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
+    width: auto;
+    box-sizing: content-box;
 }
 
 .races_block {
@@ -501,15 +527,18 @@ ul {
     align-content: space-between;
     justify-content: space-around;
     margin: 0 auto;
-    margin-bottom: 30px;
+    padding-top: 10px;
 }
 
-.races_evens {
+.races_block_evens {
     background-color: #141414;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 0 auto;
     padding-top: 20px;
-    padding-bottom: 30px;
-    
 }
 
 .races_label_evens {
@@ -523,17 +552,6 @@ ul {
 .races_desc_evens {
     color: white;
     text-shadow: 1px 1px 2px grey;
-}
-
-.races_evens {
-    background-color: #141414;
-    color: #808080;
-}
-
-.races_label_evens {
-}
-
-.races_desc_evens {
 }
 
 #races_bottom_margin {
@@ -571,8 +589,8 @@ ul {
 
 #classes_info {
     background-color: #E5E7E9;
-    padding-bottom: 30px;
     display: inline-block;
+    padding-top: 110px;
 }
 
 .classinfo_label {
@@ -586,8 +604,7 @@ ul {
     font-weight: bold;
     text-shadow: 1px 1px 2px grey;
 
-    margin-top: 150px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .classinfo_desc {
@@ -595,7 +612,7 @@ ul {
     font-size: 1.5rem;
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     text-shadow: 1px 1px 1px grey;
 }
 
@@ -614,7 +631,42 @@ ul {
     width: 100%;
     align-content: space-between;
     justify-content: space-around;
-    margin: 30px;
+    margin: 0px 0px 0px 30px;;
+}
+
+.classes_card {
+    display: flex-start;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.classes_card_img {
+    justify-content: center;
+    align-items: center;
+}
+
+.classes_card img {
+    border-radius: 10px;
+    width: 200px;
+    height:200px;
+}
+
+.classes_card_reverse {
+    display: flex-start;
+    justify-content: center;
+    padding: 0px 30px 0px 0px;
+    margin: 15px 30px 15px 0px;
+}
+
+.classes_card_img_reverse {
+    justify-content: center;
+    align-items: center;
+}
+
+.classes_card_reverse img {
+    border-radius: 10px;
+    width: 200px;
+    height:200px;
 }
 
 .skills_block_reverse {
@@ -629,6 +681,10 @@ ul {
     padding-top: 150px;
 }
 
+#history :first-child {
+  padding-top: 0px;
+}
+
 .hist_block {
     width: 100%;
     display: flex;
@@ -636,6 +692,7 @@ ul {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: grey;
+    padding-bottom: 10px;
 }
 
 .hist_label {
@@ -716,9 +773,7 @@ ul {
 }
 
 #gods {
-    background-color: #E5E7E9;
-    padding-bottom: 30px;
-    padding-top: 150px;
+    padding-top: 140px;
 }
 
 .gods_label {
@@ -743,13 +798,24 @@ ul {
 .gods_block {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    align-content: space-between;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin: 30px;
+}
+
+.gods_card {
+    display: flex-start;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.gods_card_img {
+    justify-content: center;
+    align-items: center;
+}
+
+.gods_card img {
+    border-radius: 10px;
+    width: 200px;
+    height:200px;
 }
 
 .gods_block_reverse {
@@ -772,7 +838,6 @@ ul {
 
 #gamerules {
     background-color: #E5E7E9;
-    padding-bottom: 30px;
     padding-top: 150px;
 }
 
@@ -801,7 +866,6 @@ ul {
     width: 100%;
     align-content: space-between;
     justify-content: space-around;
-    margin: 30px;
     border-radius: 10px;
 }
 
@@ -815,7 +879,7 @@ ul {
     display: flex-start;
     flex-direction: column;
     text-shadow: 1px 1px 2px grey;
-    margin-right: 30px;
+    padding: 10px 30px 10px 30px;
     width: 100%;
 }
 
@@ -826,9 +890,8 @@ ul {
     border-bottom-color: #141414;
     border-bottom-width: 2px;
     font-size: 2rem;
-    padding-right: 40px;
     font-weight: bold;
-    margin-right: 30px;
+    padding-bottom: 5px; 
     color:#141414;
     text-shadow: 1px 1px 1px grey;
 }
@@ -839,7 +902,7 @@ ul {
 }
 
 .rules_info_desc p {
-	text-align: left;
+	  text-align: left;
     color: #141414;
     font-size: 1.5rem;
 }
@@ -850,7 +913,7 @@ ul {
 #maps {
     background-color: #E5E7E9;
     padding-bottom: 30px;
-    padding-top: 150px;
+    padding-top: 140px;
 }
 
 #balric {
@@ -886,7 +949,6 @@ ul {
 
 #faq {
     background-color: #E5E7E9;
-    padding-bottom: 30px;
     padding-top: 150px;
 }
 
@@ -896,21 +958,19 @@ ul {
     width: 100%;
     align-content: space-between;
     justify-content: space-around;
-    margin: 30px;
     border-radius: 10px;
 }
 
     .faq_block p {
         color:#141414;
         text-shadow: 1px 1px 1px grey;
-        margin-right: 30px;
     }
 
 .faq_card_block {
     display: flex-start;
     flex-direction: column;
     text-shadow: 1px 1px 2px grey;
-    margin-right: 30px;
+    padding: 10px 30px 10px 30px;
     width: 100%;
 }
 
@@ -920,23 +980,29 @@ ul {
     border-bottom-style: solid;
     border-bottom-color: #141414;
     border-bottom-width: 2px;
-    font-size: 1.5rem;
-    padding-right: 40px;
+    padding-bottom: 5px; 
     font-weight: bold;
-    margin-right: 30px;
     color:#141414;
     text-shadow: 1px 1px 1px grey;
 }
 
+.faq_info_label p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
 .faq_info_desc {
     color: #141414;
-    font-size: 1.25rem;
+}
+
+.faq_info_desc p {
+    font-size: 1.5rem;
 }
 
 /* ================= resources.html css ==================*/
 #resources {
     background-color: #E5E7E9;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-top: 150px;
 }
 
@@ -1055,6 +1121,10 @@ url("IMMORTAL.ttf") format ("opentype");
     	  font-size: 1.5rem;
     	}
 	
+	  .g_welcome_frame {
+        margin-top: 100px;
+    }
+    
     .g_welcome_intro {
         font-size: 2.5rem;
     }
@@ -1129,10 +1199,13 @@ url("IMMORTAL.ttf") format ("opentype");
 
     .game_info_label {
         font-size: 1.5rem;
+        padding-bottom: 5px; 
     }
 
     .game_info_label_reverse {
         font-size: 1.5rem;
+        padding-bottom: 5px; 
+        padding-right: 0;
     }
 
     .game_info_desc {
@@ -1171,7 +1244,7 @@ url("IMMORTAL.ttf") format ("opentype");
     	  font-size: 1.2rem;
     }
     
-    .rules_info_label {
+    .rules_info_label p {
         font-size: 1.5rem;
     }
     
@@ -1179,12 +1252,12 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: 1.2rem;
     }
     
-    .faq_info_label {
-        font-size: 1.2rem;
+    .faq_info_label p {
+        font-size: 1.5rem;
     }
 
-    .faq_info_desc {
-        font-size: 1rem;
+    .faq_info_desc p {
+        font-size: 1.2rem;
     }
     
     .mapsinfo_label {
@@ -1368,17 +1441,8 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: 1.2rem;
     }
 
-    .g_welcome_enter {
-    }
-
     .g_welcome_enter h2 {
         font-size: 1.5rem;
-    }
-
-    .g_welcome_enter h4 {
-    }
-
-    .g_welcome_enter a {
     }
 
     .g_welcome_enter img {
@@ -1399,9 +1463,6 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: 1.8rem;
     }
        
-    .g_info_desc {
-    }
-
     .g_info_text {
         font-size: 1.2rem;
     }
@@ -1485,20 +1546,26 @@ url("IMMORTAL.ttf") format ("opentype");
     .nav_container {
         font-size: 1.2rem;
         background-image: none;
-        background-color: white;
         background-attachment: scroll;
+        background-image: linear-gradient(to bottom, white, lightgrey, white);
         top: 0;
     }
 
     .nav_logo img {
         width: 50%;
         height: 50%;
+        min-height: 40px;
+        min-width: 40px;
      	  padding-top: 0;
     }
 	  
 	  .nav_menu p a {
         font-size: 1.2rem;
         padding: .5rem;
+    }
+
+	  .nav_menu_classes p a {
+        display: none;
     }
 
     .nav_text {
@@ -1590,11 +1657,17 @@ url("IMMORTAL.ttf") format ("opentype");
     }
     
     .game_info_label {
-        font-size: .7rem;
+        font-size: 1rem;
+        margin-right: 0px;
+    }
+
+    .game_info_label_reverse {
+        font-size: 1rem;
     }
     
     .game_info_desc {
-        font-size: .5rem;
+        font-size: .7rem;
+        padding-right: 0;
     }
 
     .g_info_title {
@@ -1611,8 +1684,145 @@ url("IMMORTAL.ttf") format ("opentype");
         padding-bottom: 0px;
     }
     
+    #gods {
+        padding-top: 100px;    	
+    }
+    
+    .gods_block {
+        column-count: 1;
+        display: inline-grid;
+        align-self: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0;
+    }
+
+    .gods_card {
+        display: flex-start;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .gods_card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        height: auto;
+    }
+
+    #races_info {
+        margin-top: 90px;    	
+    }
+
+    .raceinfo_label {
+        font-size: 1rem;
+    }
+
+    .raceinfo_desc {
+        font-size: .7rem;
+    }
+
+    .races_block {
+        column-count: 1;
+        display: inline-grid;
+        align-self: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0;
+    }
+
+    .races_block_evens {
+        column-count: 1;
+        display: inline-grid;
+        align-self: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0;
+    }
+
+    .races_card {
+        display: flex-start;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .races_card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height:100px;
+    }
+            
+    .g_races_play_list {
+    	  padding: 10px 0px 5px 0px;
+    }
+    
+    .g_races_play_list p {
+    	  font-size: .7rem;
+    	  padding-bottom: 5px;
+    }
+
+    .g_races_play_list :first-child {
+        display: none;
+    }
+
+    #classes_info {
+        padding-top: 100px;    	
+    }
+
+    .classinfo_label {
+        margin: 0;	
+    }	
+	
+    .classes_block {
+        column-count: 1;
+        display: inline-grid;
+        align-self: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0;
+    }
+
+    .classes_block_reverse {
+        column-count: 1;
+        display: inline-grid;
+        align-self: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0;
+    }
+            
+    .classes_card {
+        display: flex-start;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .classes_card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height:100px;
+        }
+
+    .classes_card_reverse {
+        display: flex-start;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .classes_card_reverse img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height:100px;
+    }
+
     #resources {
-        padding-top: 75px; 	
+        padding-top: 100px;
     }
     
     .resources_block {
@@ -1636,9 +1846,6 @@ url("IMMORTAL.ttf") format ("opentype");
         font-size: 3.5rem;
     }
 
-    .resources_card {
-    }
-
     .resources_card_img {
         border-radius: 10px;
     }
@@ -1651,29 +1858,65 @@ url("IMMORTAL.ttf") format ("opentype");
     }
 
     .card_block {
-       margin-left: 20px;	
+    	 display: flex-start;
+       margin: 0px 20px 0px 20px;
+    }
+
+    #faq {
+        padding-top: 100px;
     }
      
+    .faq_info_label p {
+        font-size: .7rem;
+        margin: 0;
+    }
+
+    .faq_info_desc p {
+        font-size: .5rem;
+    }
+    
+    #gamerules {
+        padding-top: 100px;
+    }
+    
+    .rules_desc {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: .7rem;
+    }
+    
+    .rules_block p {
+        font-size: .7rem;
+    }
+    
     #history {
-        padding-top: 75px;
+        padding-top: 100px;
     }
 
     .hist_label {
         font-size: 1rem;
+        margin-top: 15px;
     }
 
     .hist_info_block {
         font-size: .7rem;
         display: inline-grid;
         align-self: center;
+        padding: 0;
+        margin-left: 10px;         
+        margin-right: 10px;
     }
 
     .hist_info_block img {
         display: none
     }
+    
+    .hist_info_img {
+        margin: 0;
+    }
 
     #maps {
-        padding-top: 75px;
+        padding-top: 100px;
     }
     
     .mapsinfo_label {
@@ -1720,6 +1963,7 @@ url("IMMORTAL.ttf") format ("opentype");
     
     #client p {
         text-align: center;
+        margin: 15px;
     }
 
 } */
