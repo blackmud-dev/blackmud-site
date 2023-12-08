@@ -1109,10 +1109,17 @@ footer a {
   margin-right: 10px;
 }
 
-
 @font-face {
-font-family: "IMMORTAL";
-url("IMMORTAL.ttf") format ("truetype");
+    font-family: 'immortalregular';
+    src: url('immortal-webfont.eot');
+    src: url('immortal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('immortal-webfont.woff2') format('woff2'),
+         url('immortal-webfont.woff') format('woff'),
+         url('immortal-webfont.ttf') format('truetype'),
+         url('immortal-webfont.svg#immortalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @media screen and (max-width: 1420px){
