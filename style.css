@@ -3,6 +3,7 @@ body
 {
     height: auto;
     width: 100%;
+    font-family: 'immortalregular', Fallback, sans-serif; 
 }
 
 ul {
@@ -141,10 +142,6 @@ ul {
         margin-top: 0rem;
     }
 
-#p_client {
-    font-family: Times New Roman, verdana, aria;
-}
-
 /*  ============= index.html welcome and intro area ============= */
 #welcome {
     scroll-margin-top: 200px;
@@ -209,7 +206,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:IMMORTAL;
   font-size: 2rem;
 }
 
@@ -1109,20 +1105,11 @@ footer a {
   margin-right: 10px;
 }
 
-@font-face {
-    font-family: 'immortalregular';
-    src: url('immortal-webfont.eot');
-    src: url('immortal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('immortal-webfont.woff2') format('woff2'),
-         url('immortal-webfont.woff') format('woff'),
-         url('immortal-webfont.ttf') format('truetype'),
-         url('immortal-webfont.svg#immortalregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 @media screen and (max-width: 1420px){
+
+body {
+    font-family: 'immortalregular', Fallback, sans-serif; 
+}
 
     .nav_container {
     	  font-size: 1.5rem;
@@ -1972,4 +1959,17 @@ footer a {
         margin: 15px;
     }
 
-} */
+}
+
+
+@font-face {
+    font-family: 'immortalregular';
+    src: url('immortal-webfont.eot');
+    src: url('immortal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('immortal-webfont.woff2') format('woff2'),
+         url('immortal-webfont.woff') format('woff'),
+         url('immortal-webfont.ttf') format('truetype'),
+         url('immortal-webfont.svg#immortalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
