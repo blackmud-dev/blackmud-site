@@ -1107,10 +1107,6 @@ footer a {
 
 @media screen and (max-width: 1420px){
 
-body {
-    font-family: 'immortalregular', Fallback, sans-serif; 
-}
-
     .nav_container {
     	  font-size: 1.5rem;
     	}
