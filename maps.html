@@ -2,35 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="description" content="All Text RPG - Classic mudding.">
     <meta name="keywords" content="MUD Mudding Text RPG BlackMUD">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <title>Black Mud: The Last Age</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
-    <link rel="stylesheet" type="text/css" href="style_pages.css">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150" >
-            
-        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#social">Game Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-               
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></li>
-            </ul>
+        	<div class="nav_container">
+            <div class="nav_logo">
+              <a href="index.html"><img src="images/logo_modified_t.png" alt="BlackMud Logo"></a>
+            </div>
+            <div class="nav_menu">
+               <p><a href="#">Game&nbsp;World</a></p>      
+            </div>
+            <div class="nav_text">
+            	<p><a href="#">Top</a></p>
+            </div>
+          </div>
         </nav>
-
-        <div class="gamestats_container">
-            <!--<a href="https://www.blackmud.com/pages/GameStats.php">
+        
+<!--        <div class="gamestats_container">
+            <a href="https://www.blackmud.com/pages/GameStats.php">
                 <div class="game_stats">
 
                     <div>
@@ -39,20 +39,25 @@
                     <p id="p_client">Game Stats</p>
 
                 </div>
-            </a>-->
+            </a>
         </div>
+-->
 
     </header>
+    
     <main>
         <section id="maps">
-            <div class="raceinfo_label">
-                <p>Maps of Entia</p>
+            <div class="mapsinfo_label">
+                <p>Map of Balric</p>
             </div>
             <div class="balric_container">
-                
-                <img id="balric" src="images/Balric.png" alt="map of balric">
+                <a href="images/Balric_HD.jpg">
+                	<img id="balric" src="images/Balric.png" alt="map of balric">
+                </a>
             </div>
-
+            <div class="mapsinfo_label">
+                <p>Map of Entia</p>
+            </div>
             <div class="entia_container">
                 <img id="entia" src="images/entia.gif" alt="map of entia">
             </div>
@@ -61,28 +66,40 @@
     </main>
   
     <footer>
+    	<div class="page_footer">
         <div class="footer_spacer"></div>
-        <div id="footer_nav">
-            <ul>
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#game_info">Game Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+          <div class="page_footer_links">
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="./index.html#welcome">Home</a></li>
+                    <li><a href="./index.html#game_details">Game Info</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                    <!-- <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li> -->
+                    <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
+                    <li><a href="">&nbsp;</a></li>
+                </ul>
                 
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD">Contact</a></li>
-                
-            </ul>
-            
-        </div>
-        <div class="footer_mid_spacer"></div>
-        <div id="client">
-            <p>
-                BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.
-            </p>
-            <p>
-                Connect to the game. We recommend getting a good mud client. You can find one <a href="http://www.mudconnect.com/resources/Mud_Resources:Mud_Clients.html">here</a>.
-            </p>
-        </div>
-        <div class="footer_spacer"></div>
+            </div>
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="./history.html">Lore & History</a></li>
+                    <li><a href="./maps.html">World</a></li>
+                    <li><a href="./races.html">Races</a></li>
+                    <li><a href="./races.html">Classes</a></li>
+                    <li><a href="./races.html">Pantheon</a></li>
+                    <li><a href="./races.html">Policies</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="footer_mid_spacer"></div>
+          <div id="client">
+              <p>BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.</p>
+              <p>Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.</p>
+              <p>©2023 BlackMUD Development Group</p>
+          </div>
+          <div class="footer_spacer"></div>
+      </div>
     </footer>
 </body>
 </html>

@@ -6,26 +6,29 @@
     <meta name="keywords" content="MUD Mudding Text RPG BlackMUD">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <title>Black Mud: The Last Age</title>
+    <title>BlackMUD: The Age of Rebirth</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css"> -->
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo_modified_t.png" alt="BlackMud Logo" width="150" height="150" >
-            
-        </div>
+	  <header>
         <nav>
-            <ul>
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#social">Game Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-               
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></li>
-            </ul>
+        	<div class="nav_container">
+            <div class="nav_logo">
+              <a href="index.html"><img src="images/logo_modified_t.png" alt="BlackMud Logo"></a>
+            </div>
+            <div class="nav_menu">
+              <p><a href="#game_details">Details</a></p>
+              <p><a href="faq.html">FAQ</a></p>
+              <p><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD" id="contact-link">Contact</a></p>
+            </div>
+            <div class="nav_text">
+            	<p><a href="#">Top</a></p>
+            </div>
+          </div>
         </nav>
 
         <div class="gamestats_container">
@@ -40,142 +43,170 @@
                 </div>
             </a>-->
         </div>
-
     </header>
+
     <main id="home">
         <section id="welcome">
-          
-                <div id="who">
-                    <p id="hello">The Age of Rebirth!</p>
-                    <p id="summary">The light of Phaet and the shadow of Nixil have both been seen in the realm again. Change has come alive in the world, and the struggle between order and chaos, good and evil are renewed. </p>
+            <div class="g_welcome_frame">
+                <div class="g_welcome_intro">
+                  <div class="g_welcome_name">BlackMUD: The Age of Rebirth!</div>
+                  <br>
+                  <div class="g_welcome_summary">The light of Phaet and the shadow of Nixil have both been seen in the realm again. Change has come alive in the world, and the struggle between order and chaos, good and evil are renewed.</div>
                 </div>
-           
-                <div id="enter_realm">
-                    <a href="telnet://blackmud.com:2000">
-                        <img src="images/enter_w.png" alt="archway to mud client" width="250"  height="250" />
-                        <h2>
-                            Enter the Realm
-                        </h2>
-                    </a>
-                
+                <div class="g_welcome_enter_frame">
+                    <div class="g_welcome_enter">
+                        <a href="telnet://blackmud.com:2000">
+                            <img src="images/enter_w_transp.png" alt="archway to mud client" width="250"  height="250" />
+                            <h2 style="color:white;text-shadow: 1px 1px 2px darkred"> Enter the Realm </h2>
+                        </a>
+                    </div>
+                    <div class="g_need_client">    
+                        <a href="./resources.html">
+                            <h4> Click here if you don't have a Telnet or MUD Client configured.</h4>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="social">
-                <div class="social_spacer"></div>
-                <a href="https://www.facebook.com/blackmud.2000">
-                    <img src="images/f_logo_RGB-White_58.png" alt="facebook icon" width="30" height="30">
-                </a>
-
-                <a id="discord" href="https://discord.gg/TnBAMt5">
-                    <img src="images/discord-mark-white.png" alt="discord icon" width="35.5" height="27">
-                </a>
-
-                <a href="mailto:minektur@blackmud.com?subject=BlackMUD">
-                    <img src="images/mail.svg" alt="mail icon" width='35.5' height="27">
-                </a>
-                <div class="social_spacer"></div>
-        </section>
         
+        <section id="social">
+            <div class="social_spacer"></div>
+            <a href="https://www.facebook.com/blackmud.2000">
+                <img src="images/f_logo_RGB-White_58.png" alt="facebook icon" width="30" height="30">
+            </a>
+
+            <a id="discord" href="https://discord.gg/TnBAMt5">
+                <img src="images/discord-mark-white.png" alt="discord icon" width="35" height="27">
+            </a>
+
+            <a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">
+                <img src="images/mail.svg" alt="mail icon" width='35' height="27">
+            </a>
+            <div class="social_spacer"></div>
+        </section>
           
-            <section id="game_info">
+        <section id="game_details">
+        
+            <div class="g_info_b_new">
+               <div><a href="history.html"><img class="g_info_image" src="images/history_m_transp.png" alt="Lore and History of BlackMUD"/></a></div>
+               <div class="g_info_desc">
+                	<a href="history.html">
+                	  <p class="g_info_title">Lore and History</p>
+                    <p class="g_info_text">Entia possesses a deep and rich unique history to explore, merging elements of nation-state, racial, and religious strife.<br></p>
+                  </a>
+               </div>
+            </div>
+         
+            <div class="g_info_b_new">
+                  <div><a href="maps.html"><img class="g_info_image" src="images/makilor_side_a_transp.png" alt="The World of Entia"/></a></div>
+                  <div class="g_info_desc">
+                  	<a href="maps.html">
+                  	  <p class="g_info_title">World</p>
+                      <p class="g_info_text">The world of Entia is a dark medieval fantasy setting filled with a variety of unique and exciting places to explore.</p>
+                    </a>
+                  </div>
+                </a>
+            </div>
             
-                <div class="g_info_block">
-                    <a href="history.html">
-                    <img class="g_info_image" src="images/history_m.png" alt="history icon" />
-                    <div class="g_info_desc"><p class="g_info_title">History</p>
-                    
-                    <div class="g_info_text">The history of Entia. Phaet is Everything, EveryWhere, and EveryWhen.<br></div>
-                    
-                    </div>
+            <div class="g_info_b_new">
+                <div><a href="races.html"><img class="g_info_image" src="images/halforc_a_transp.png" alt="The Races of Entia"/></a></div>
+                  <div class="g_info_desc">
+                  	<a href="races.html">
+                  		<p class="g_info_title">Races</p>
+                      <p class="g_info_text">Countless races wander the lands of Entia, with many unique species that can only be found in the world of Entia.</p>
+                    </a>  
+                  </div>
                 </a>
+            </div>
+       
+            <div class="g_info_b_new">
+                <div><a href="classes.html"><img class="g_info_image" src="images/classes_m_transp.png" alt="The Classes"/></a></div>
+                <div class="g_info_desc">
+                	<a href="classes.html">
+                  	<p class="g_info_title">Classes</p>
+                    <p class="g_info_text">BlackMUD has 17 classes and sub-classes to experience. Each with its own abilities, strengths, and weaknesses.</p>
+                  </a>  
                 </div>
+            </div>
+
+            <div class="g_info_b_new">
+                <div><a href="gods.html"><img class="g_info_image" src="images/nixel_d_transp.png" alt="The Pantheon"/></a></div>
+                <div class="g_info_desc">
+                	<a href="gods.html">
+                	 <p class="g_info_title">Pantheon</p>
+                   <p class="g_info_text">Merging mono and polytheistic elements, the Pantheon is entertwined in the struggle for or against the Unmaking.</p>
+                  </a> 
+                </div>
+            </div>
+
+            <div class="g_info_b_new">
+                <div><a href="rules.html"><img class="g_info_image" src="images/rules_a_transp.png" alt="Game Policies"/></a></div>
+                <div class="g_info_desc">
+                	<a href="rules.html">
+                    <p class="g_info_title">Policies</p>
+                    <p class="g_info_text">Like any community, BlackMUD has a set of behavioral norms, based on decency and respect, that are required.</p>
+                  </a>  
+                </div>
+            </div>
+
+            <div class="g_info_b_new">
+                <div><a href="faq.html"><img class="g_info_image" src="images/resources_a_transp.png" alt="FAQ"/></a></div>
+                <div class="g_info_desc">
+                	<a href="faq.html">
+                    <p class="g_info_title">FAQ</p>
+                    <p class="g_info_text">Lots of questions and answers so amny questions and answers and answers to questions and other stuff goes here.</p>
+                  </a>
+                </div>
+            </div>
             
-                <div class="g_info_block">
-                    <a href="races.html">
-                    <img class="g_info_image" src="images/halforc_a.png" alt="races icon" />
-                    <div class="g_info_desc"><p class="g_info_title">Races</p>
-                    
-                    
-                    <p class="g_info_text">Over 50 races wander the lands of Entia. Unique species that can only be found in Blackmud.</p>
-                    
-                    </div>
-                </a>
+            <div class="g_info_b_new">
+                <div><a href="resources.html"><img class="g_info_image" src="images/skills_a.png" alt="Resources"/></a></div>
+                <div class="g_info_desc">
+                	<a href="resources.html">
+                    <p class="g_info_title">Resources</p>
+                    <p class="g_info_text">Game Tools like clients and a lot more content here and stuff and more stuff and a few more things.</p>
+                  </a>
                 </div>
-           
-                <div class="g_info_block">
-                    <a href="classes.html">
-                    <img class="g_info_image" src="images/classes_m.png" alt="classes icon" />
-                    <div class="g_info_desc"><p class="g_info_title">Classes</p>
-                    
-                    
-                    <p class="g_info_text">BlackMUD has 17 classes and sub-classes. Each class has its own abilities, strength and weaknesses.</p>
-                    
-                    </div>
-                </a>
-                </div>
-                <div class="g_info_block">
-                    <a href="gods.html">
-                    <img class="g_info_image" src="images/minketar_a.png" alt="pantheon icon" />
-                    <div class="g_info_desc"><p class="g_info_title">Pantheon</p>
-                        
-                    
-                    <p class="g_info_text">The Gods of Entia.<br><br>
-                        What comes, when it comes, will be what it is.</p>
-                    
-                    </div>
-                </a>
-                </div>
-                <div class="g_info_block">
-                    <a href="rules.html">
-                    <img class="g_info_image" src="images/rules_a.png" alt="rules icon" />
-                    <div class="g_info_desc"><p class="g_info_title">Rules</p>
-                        
-                    
-                    <p class="g_info_text">Role Playing Guidelines and BlackMUD Policies.
-                        Respect and Decency, that's all we ask/demand.</p>
-                    
-                    </div>
-                </a>
-                </div>
+            </div>
             
-                <div class="g_info_block">
-                    <a href="maps.html">
-                    <img class="g_info_image" src="images/makilor_side_a.png" alt="maps icon" />
-                    <div class="g_info_desc"><p class="g_info_title">Maps</p>
-                        
-                    
-                    <p class="g_info_text">You can find the maps of Entia here.</p>
-                    
-                    </div>
-                </a>
-                </div>
-            </section>
-           
+        </section>
     </main>
   
     <footer>
+    	<div class="page_footer">
         <div class="footer_spacer"></div>
-        <div id="footer_nav">
-            <ul>
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#game_info">Game Info</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li>
-                <li><a href="mailto:minektur@blackmud.com?subject=BlackMUD">Contact</a></li>
+          <div class="page_footer_links">
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="./index.html#welcome">Home</a></li>
+                    <li><a href="./index.html#game_details">Game Info</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                    <!-- <li><a href="https://www.blackmud.com/protected/imm-tools.html">Immortal Tools</a></li> -->
+                    <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
+                    <li><a href="">&nbsp;</a></li>
+                </ul>
                 
-            </ul>
-            
-        </div>
-        <div class="footer_mid_spacer"></div>
-        <div id="client">
-            <p>
-                BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.
-            </p>
-            <p>
-                Connect to the game. We recommend getting a good mud client. You can find one <a href="http://www.mudconnect.com/resources/Mud_Resources:Mud_Clients.html">here</a>.
-            </p>
-        </div>
-        <div class="footer_spacer"></div>
+            </div>
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="./history.html">Lore & History</a></li>
+                    <li><a href="./maps.html">World</a></li>
+                    <li><a href="./races.html">Races</a></li>
+                    <li><a href="./races.html">Classes</a></li>
+                    <li><a href="./races.html">Pantheon</a></li>
+                    <li><a href="./races.html">Policies</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="footer_mid_spacer"></div>
+          <div id="client">
+              <p>BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.</p>
+              <p>Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.</p>
+              <p>©2023 BlackMUD Development Group</p>
+          </div>
+          <div class="footer_spacer"></div>
+      </div>
     </footer>
 </body>
 </html>
