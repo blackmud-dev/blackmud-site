@@ -31,6 +31,9 @@ ul {
     height: 200px;
 }
 
+figure figcaption {
+    text-align: center;
+}
 
 /* ============= nav bar at the top of each page ============= */
 .nav_container {
