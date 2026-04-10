@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="BlackMUD News - Updates, previews, and announcements.">
+    <meta name="keywords" content="MUD Mudding Text RPG BlackMUD News Updates">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackMUD: News</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_container">
+                <div class="nav_logo">
+                    <a href="index.html"><img src="images/logo_modified_t.png" alt="BlackMud Logo"></a>
+                </div>
+                <div class="nav_menu">
+                    <p><a href="#news_latest">Latest</a></p>
+                    <p><a href="#news_archive">Archive</a></p>
+                </div>
+                <div class="nav_text">
+                    <p><a href="#">Top</a></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="news">
+
+        <!-- Archive Index -->
+        <section id="news_archive">
+            <div class="news_archive_container">
+                <div class="news_archive_label">News Archive</div>
+                <div class="news_archive_list">
+                    <a href="#article-20260401" class="news_archive_item">
+                        <span class="news_archive_date">April 1, 2026</span>
+                        <span class="news_archive_title">BlackMUD 3.0 Preview</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles -->
+        <section id="news_articles">
+
+            <article id="article-20260401" class="news_article">
+                <div class="news_article_header">
+                    <span class="news_article_date">April 1, 2026</span>
+                    <span class="news_latest_badge" id="news_latest">Latest</span>
+                </div>
+                <h2 class="news_article_title">BlackMUD 3.0 Preview</h2>
+                <div class="news_article_body">
+                    <p>The realm of Entia stands on the precipice of its greatest transformation. After years of development, we are thrilled to announce <strong>BlackMUD 3.0</strong>, the most ambitious update in the history of BlackMUD.<br><br>
+                    Today we're pleased to share some of the changes and give an indication of the direction BlackMUD is expanding its world through content and player experience.  This update preview is focused on sharing larger game updates to systems, new and existing, that players interact with.<br><br>
+                    The BlackMUD development team is still wrapping up development.  Once we have a release date target we will share our go-live plan and additional patch notes.
+                </p>
+
+                    <nav class="news_toc">
+                        <div class="news_toc_label">In This Update</div>
+                        <ul class="news_toc_list">
+                            <li><a href="#toc-content">New Content</a></li>
+                            <li><a href="#toc-nourishment">Nourishment Updates</a></li>
+                            <li><a href="#toc-perception">Sharpened Senses</a></li>
+                            <li><a href="#toc-combat">Clearer Combat</a></li>
+                            <li><a href="#toc-livingworld">A Living World: Movement, NPC Behavior, and Resets</a></li>
+                            <li><a href="#toc-camping">Camping and Shelter Deployment</a></li>
+                            <li><a href="#toc-itemquality">Item Quality, Artificer Reforging &amp; Item Reinforcement</a></li>
+                            <li><a href="#toc-tagging">Item Tagging</a></li>
+                            <li><a href="#toc-weapondmg">Weapon Damage Types and Damage Bonuses</a></li>
+                            <li><a href="#toc-stables">Stables</a></li>
+                            <li><a href="#toc-warehouse">Warehouse Storage</a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 class="news_subheading">A New Age Dawns</h3>
+                    <p>The Age of Discovery is coming to an end. As it fades, the realm of Entia will enter the <strong>Age of Turmoil</strong>, an age that will bring new challenges, risks, and rewards. The mortal races, battered by centuries of conflict between the Elder Gods and the forces of the Unmaking, have begun to push beyond the known borders of Entia. New areas, lost civilizations, and ancient powers await those bold enough to seek them out. The light of Phaet and the shadow of Nixil have both been seen in the realm again, and with their return, the very fabric of the world has shifted.</p>
+
+                    <h3 class="news_subheading" id="toc-content">New Content</h3>
+                    <p><strong>Expanded World.</strong> The world of Entia is growing significantly, with new zones designed for all level ranges.</p>
+
+                    <h4 class="news_example_label">Makilor Outskirts</h4>
+                    <p>The lands beyond Makilor's walls are opening up. Rolling green stretches, worn hillside paths, and the lived edge of civilization now give the city a broader sense of place and danger. Just beyond the gates, new adventurers will find fresh routes to explore, dangers to test themselves against, and a stronger sense that Makilor is only the beginning.</p>
+                    <p>These lands will provide new areas to explore and engage for characters level 1&ndash;15.</p>
+
+                    <h4 class="news_example_label">The Deepways</h4>
+                    <p>Far below the safer roads, old ruin gives way through the water into the darkness. Ancient passages, submerged danger, and the weight of forgotten history shape a place marked by depth, pressure, and unease. What lies beneath reaches back to the long collapse that followed the fall of Rac Semder, when fragments of elven learning vanished from the world and some were said to have been hidden away in secret places beyond all reach.</p>
+                    <p>The Deepways provides new challenges for seasoned explorers.</p>
+
+                    <h3 class="news_subheading" id="toc-nourishment">Nourishment Updates</h3>
+                    <p>The nourishment system has been rebalanced to be less tedious and more meaningful.</p>
+
+                    <p><strong>You go longer between meals.</strong> Food and drink depletion rates have been adjusted so you spend less time hunting for your next meal and more time adventuring.</p>
+
+                    <p><strong>Movement is no longer punished.</strong> Starvation no longer penalizes movement regeneration at any tier. You can always keep moving, even on an empty stomach.</p>
+
+                    <p><strong>Staying fed is rewarded.</strong> Maintaining healthy food and drink levels for a sustained period grants the Well Nourished state, providing a movement regeneration bonus. The <code>hunger</code> and <code>thirst</code> commands let you check where you stand.</p>
+
+                    <p><strong>Neglecting nutrition has consequences.</strong> Going without food or water now triggers escalating penalties to HP and mana regeneration. The longer you go, the worse it gets, but it's never lethal on its own. You'll receive warnings as your supplies run low, giving you time to act.</p>
+
+                    <h3 class="news_subheading" id="toc-perception">Sharpened Senses</h3>
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New Skill</span>
+                            <span class="news_feature_name">Perception</span>
+                        </div>
+                        <p class="news_feature_note">Available to all players. The following classes may practice at their guild hall: <strong>Thief</strong>, <strong>Mage</strong>, <strong>Cleric</strong>, and in the future, <strong>Druid</strong>.</p>
+                    </div>
+
+                    <p>Your awareness of the world around you just got a whole lot deeper. The Perception skill now weaves through nearly every aspect of exploration and awareness, from noticing a hidden figure in the shadows to catching the glint of something concealed beneath the underbrush.</p>
+
+                    <p>Here's what your keen senses can do. Simply looking around a room may now reveal things you'd otherwise miss. When you enter a new area or type <code>look</code>, your perception works quietly in the background.</p>
+
+                    <h4 class="news_example_label">Hidden Exits</h4>
+                    <div class="news_terminal">
+                        <p>&gt; look</p>
+                        <p>&nbsp;</p>
+                        <p>Calif Street</p>
+                        <p>You are walking along Calif Street. This street runs both eastward and westward.</p>
+                        <p>Exits: East West</p>
+                        <p class="news_terminal_highlight">You notice something unusual to the south...</p>
+                    </div>
+                    <p>That subtle hint tells you something is off about the area to the south. Maybe a path, maybe a passage. You'll need to search to find out for sure.</p>
+
+                    <h4 class="news_example_label">Lurking Figures</h4>
+                    <div class="news_terminal">
+                        <p>&gt; look</p>
+                        <p>&nbsp;</p>
+                        <p>Calif Street</p>
+                        <p>You are walking along Calif Street. This street runs both eastward and westward.</p>
+                        <p>Exits: East West</p>
+                        <p class="news_terminal_highlight">You sense someone lurking nearby...</p>
+                    </div>
+                    <p>Your instincts are tingling. Someone is hiding in this area. You can't see them yet, but you know they're there.</p>
+
+                    <h4 class="news_example_label">Concealed Objects</h4>
+                    <div class="news_terminal">
+                        <p>&gt; look</p>
+                        <p>&nbsp;</p>
+                        <p>You are walking along Calif Street. This street runs both eastward and westward.</p>
+                        <p>Exits: East West</p>
+                        <p class="news_terminal_highlight">Something seems concealed in this area...</p>
+                    </div>
+                    <p>An object has been hidden here. A stashed weapon? A smuggler's cache? Time to search.</p>
+
+                    <div class="news_mechanic_note">
+                        <h4>Perception and Search</h4>
+                        <p>Those perception hints sharpen your focus, granting your next search attempt against that mob, exit, or item a bonus to discovery.</p>
+                    </div>
+
+                    <h3 class="news_subheading" id="toc-combat">Clearer Combat</h3>
+                    <p>Combat just got a lot easier to read. A new combat message system gives you control over how much detail you see during a fight, from full play-by-play to clean per-round summaries. Every mode is color-coded for quick scanning, and you can switch between them at any time.</p>
+
+                    <div class="news_mechanic_note">
+                        <p>Type <code>combatmode</code> to see your current setting, or <code>combatmode &lt;mode&gt;</code> to switch.</p>
+                    </div>
+
+                    <h4 class="news_example_label">Verbose: The New Default</h4>
+                    <p>Every attack on its own line, with color-coded names, weapons, and damage. Enemies hitting you stand out in bright white so you never lose track of incoming damage.</p>
+                    <p>Same detail you're used to, but now color tells you at a glance who's doing what, with weapon types, defenses, and damage intensity each in their own color.</p>
+
+                    <h4 class="news_example_label">Summary: Cut Through the Noise</h4>
+                    <p>In large fights, individual messages stack up fast. Summary mode groups your attacks per round into clean, readable lines.</p>
+                    <div class="news_terminal">
+                        <p>&gt; combatmode summary</p>
+                        <p class="news_terminal_highlight">Combat display set to Summary. All combat summarized per round.</p>
+                    </div>
+                    <p>Instead of eight separate lines, you see:</p>
+                    <div class="news_terminal">
+                        <p>You slash the orc hard three times.</p>
+                        <p class="news_terminal_bright">The orc hits you twice.</p>
+                        <p>You dodge two of the orc's attacks.</p>
+                    </div>
+                    <p>When damage gets heavy, the verbs escalate:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You annihilate the orc twice with your slashes.</p>
+                    </div>
+
+                    <h4 class="news_example_label">Brief: Focus on Your Fight</h4>
+                    <p>In a room full of combat, you don't always need the play-by-play for everyone else's fight. Brief mode shows your combat in full detail while summarizing everything else in the room.</p>
+                    <div class="news_terminal">
+                        <p>&gt; combatmode brief</p>
+                        <p class="news_terminal_highlight">Combat display set to Brief. Your combat detailed, others summarized.</p>
+                        <p>&nbsp;</p>
+                        <p>You slash a gnoc hard.</p>
+                        <p>You slash a gnoc very hard.</p>
+                        <p>You massacre a gnoc with your sword.</p>
+                        <p class="news_terminal_bright">The orc hits you hard.</p>
+                        <p class="news_terminal_bright">The orc hits you very hard.</p>
+                        <p class="news_terminal_dim">An armored golem annihilates the orc twice with their slashes.</p>
+                    </div>
+                    <p>Your own attacks and defenses appear in full. Everyone else's combat is summarized into compact lines so you stay aware without the scroll.</p>
+
+                    <h4 class="news_example_label">NPC Focus: Watch the Monsters</h4>
+                    <p>NPC Focus shows full detail for NPC actions while summarizing player attacks. Great for learning mob behavior or watching a tough fight unfold.</p>
+                    <div class="news_terminal">
+                        <p>&gt; combatmode npc</p>
+                        <p class="news_terminal_highlight">Combat display set to NPC Focus. NPC attacks detailed, player attacks summarized.</p>
+                        <p>&nbsp;</p>
+                        <p class="news_terminal_dim">You slash the orc hard three times.</p>
+                        <p class="news_terminal_bright">The orc bites you once.</p>
+                        <p class="news_terminal_bright">The orc hits you hard once.</p>
+                        <p class="news_terminal_bright">The orc misses you once.</p>
+                    </div>
+                    <p>NPC attacks, dodges, parries, and blocks are all shown individually so you can see exactly what they're doing.</p>
+
+                    <h4 class="news_example_label">Vintage: The Classic Experience</h4>
+                    <p>Prefer things exactly the way they've always been? Vintage mode delivers uncolored, unprocessed messages. The same raw output you've always known.</p>
+                    <div class="news_terminal">
+                        <p>&gt; combatmode vintage</p>
+                        <p class="news_terminal_highlight">Combat display set to Vintage. Classic uncolored messages.</p>
+                        <p>&nbsp;</p>
+                        <p>You slash the orc.</p>
+                        <p>You hit the orc.</p>
+                        <p>You barely hit the orc.</p>
+                        <p>You hit the orc hard.</p>
+                        <p class="news_terminal_bright">The orc hits you.</p>
+                        <p class="news_terminal_bright">The orc hits you hard.</p>
+                    </div>
+                    <p>No colors. No grouping. No changes. Just the classic combat experience, exactly as it's always been.</p>
+
+                    <div class="news_mechanic_note">
+                        <h4>What Stays Visible in Every Mode</h4>
+                        <p>Some things are too important to summarize. Regardless of your display mode, you'll always see:</p>
+                        <ul class="news_mechanic_list">
+                            <li><strong>Death blows</strong>: when you or someone else falls</li>
+                            <li><strong>Equipment damage</strong>: your gear taking hits</li>
+                            <li><strong>Spell effects</strong>: barriers, wards, and other critical events</li>
+                        </ul>
+                        <p>These events are always shown in full detail, even in Summary mode.</p>
+                    </div>
+
+                    <h3 class="news_subheading" id="toc-livingworld">A Living World: Movement, NPC Behavior, and Resets</h3>
+                    <p>The world just got more vertical, more underground, and a lot harder to walk through unchallenged. New movement types push you to leap across gaps, soar through open sky, burrow beneath the earth, and break through barriers. Meanwhile, the world behind you keeps breathing. Doors re-lock, hidden passages conceal themselves again, and containers refill with new contents.</p>
+
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New Skill</span>
+                            <span class="news_feature_name">Athletics</span>
+                        </div>
+                        <p class="news_feature_note">Available to all players. The following classes may practice at their guild hall: <strong>Warrior</strong>, <strong>Monk</strong>, and <strong>Thief</strong>. Athletics is automatically used by activities like leaping, swimming, flying, and burrowing.</p>
+                    </div>
+
+                    <h4 class="news_example_label">Jumping: Mind the Gap</h4>
+                    <p>Some exits can no longer be crossed by simply walking. A chasm, a broken bridge, a gap between rooftops. These require a leap of faith and a test of your Athletics skill.</p>
+                    <p>Walk into a jump exit and you'll be warned:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You'll need to leap to cross that gap.</p>
+                    </div>
+                    <p>Use <code>leap &lt;direction&gt;</code> to attempt the jump:</p>
+                    <div class="news_terminal">
+                        <p>&gt; leap east</p>
+                        <p>You prepare to leap east.</p>
+                        <p class="news_terminal_highlight">You leap across with ease!</p>
+                    </div>
+                    <p>Not every jump goes smoothly. Your outcome depends on your Athletics skill, Dexterity, and Strength against the difficulty of the gap:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You barely make the jump, stumbling on the landing!</p>
+                    </div>
+                    <p>Or if you misjudge it entirely:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_warn">You misjudge the jump and plummet!</p>
+                    </div>
+                    <p>A bad fall means damage, and you'll land wherever the fall takes you, possibly somewhere you didn't want to be.</p>
+
+                    <p>Sizing up a jump: Use <code>consider &lt;direction&gt;</code> to gauge your chances before committing:</p>
+                    <div class="news_terminal">
+                        <p>&gt; consider east</p>
+                        <p class="news_terminal_highlight">This jump looks fairly easy.</p>
+                    </div>
+                    <p>Or for the less fortunate:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_warn">This jump looks very dangerous. You'd need luck.</p>
+                    </div>
+
+                    <div class="news_mechanic_note">
+                        <h4>Safe Fall</h4>
+                        <p>Those with the Safe Fall skill can reduce or negate fall damage entirely, landing gracefully where others would crash.</p>
+                    </div>
+
+                    <h4 class="news_example_label">Tossing: Give Your Friends a Boost</h4>
+                    <p>Can't make the jump? Maybe your group's warrior can toss you across.</p>
+                    <div class="news_terminal">
+                        <p>&gt; toss Kaladin east</p>
+                        <p>You grab your target and prepare to toss them!</p>
+                        <p class="news_terminal_highlight">You toss Kaladin east and they land gracefully!</p>
+                    </div>
+                    <p>Tossing uses your Athletics skill, modified by Strength and the weight difference between you and your target. A successful toss lands your ally on the other side. A failed one gets... creative:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">Your toss goes awry but Kaladin still makes it east!</p>
+                        <p class="news_terminal_dim">Kaladin tumbles in from the west and lands in a heap!</p>
+                    </div>
+                    <p>Or in the worst case, you both go over:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_warn">You try to toss Kaladin but get pulled over as well!</p>
+                        <p class="news_terminal_warn">You both fall!</p>
+                    </div>
+
+                    <div class="news_mechanic_note">
+                        <h4>Toss Rules</h4>
+                        <p>Tossing only works on group members. You can't hurl strangers across chasms. You also can't toss someone through a burrow exit or a closed door.</p>
+                    </div>
+
+                    <h4 class="news_example_label">Flying: Take to the Sky</h4>
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New Skill</span>
+                            <span class="news_feature_name">Flying</span>
+                        </div>
+                        <p class="news_feature_note">Learned once a character gains the ability to fly via spell or skill.</p>
+                    </div>
+                    <p>Certain exits require flight to traverse. If you have wings or a flight spell active, these passages open up to you.</p>
+                    <p>Characters with wings or flight magic can access these routes. Flying exits test your Flying skill against the exit's difficulty. Success means soaring through with ease:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You soar through the air with ease.</p>
+                    </div>
+                    <p>A struggle costs extra movement but you still make it:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You struggle to gain altitude but manage to get airborne.</p>
+                    </div>
+                    <p>A stall means you can't make it through this time:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_warn">You flap your wings but can't seem to get off the ground.</p>
+                    </div>
+                    <p>And a critical failure? You start falling:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_warn">Without anything to grab onto, you start to fall!</p>
+                    </div>
+
+                    <h4 class="news_example_label">Burrowing: Beneath Your Feet</h4>
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New Skill</span>
+                            <span class="news_feature_name">Burrowing</span>
+                        </div>
+                        <p class="news_feature_note">Learned once a character gains the ability to burrow via spell or skill.</p>
+                    </div>
+                    <p>A new dimension of movement lets earth-attuned characters phase through solid ground, opening up underground passages invisible to surface dwellers.</p>
+                    <p>Burrowing exits test your Burrowing skill against the passage difficulty, and the terrain shapes your experience:</p>
+                    <p>Through a forest:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You weave between ancient roots, the soil yielding.</p>
+                    </div>
+                    <p>Through mountain rock:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">You phase through solid stone, feeling its ancient weight.</p>
+                    </div>
+                    <p>Others in the room see you vanish:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_bright">Kaladin disappears beneath the roots.</p>
+                        <p class="news_terminal_dim">Kaladin phases into solid rock.</p>
+                    </div>
+                    <p>And in the destination room:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_bright">Kaladin surfaces through tangled roots.</p>
+                        <p class="news_terminal_dim">Kaladin breaks through solid rock.</p>
+                    </div>
+                    <p>A critical failure expels you violently from the earth with damage. Burrowing is blocked in water, air, lava, and urban environments. You need actual earth to move through.</p>
+                    <p>The <code>burrow</code> command also lets you travel up to two rooms in a single action if you have the stamina for it:</p>
+                    <div class="news_terminal">
+                        <p>&gt; burrow 2east</p>
+                        <p class="news_terminal_highlight">You bore through the ground at incredible speed, erupting two rooms away!</p>
+                    </div>
+
+                    <h4 class="news_example_label">Barriers: Blocked Paths</h4>
+                    <p>Some passages are blocked by physical obstacles like tension wires, wooden wedges, and metal braces. These can be built into the world or placed by certain resourceful classes.</p>
+                    <p>Walking into a barrier stops you cold:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_warn">Sturdy wooden wedges block the passage east.</p>
+                    </div>
+                    <p>To get through, you'll need to attack the barrier and destroy it:</p>
+                    <div class="news_terminal">
+                        <p>&gt; attack east</p>
+                    </div>
+                    <p>Each barrier has hit points that degrade as you strike it. Flimsy wire barriers fall quickly; heavy metal braces take serious effort. When the barrier breaks, debris is left behind, and over time, world-placed barriers will rebuild themselves.</p>
+
+                    <h4 class="news_example_label">NPC Combat Intelligence</h4>
+                    <p>The creatures and NPCs of the world are getting smarter. Combat behavior has been rebuilt from the ground up to give enemies distinct fighting styles, tactical awareness, and the ability to react to what you do in a fight.</p>
+
+                    <p><strong>Class-Based Tactics.</strong> NPCs now fight according to their class. A warrior mob won't behave like a mage mob. Expect casters to use spells appropriate to their school, melee fighters to use combat techniques suited to their training, and healers to prioritize keeping their allies alive.</p>
+
+                    <p><strong>Reactive Behavior.</strong> NPCs can now observe what's happening in combat and respond. Cast a powerful spell in front of the wrong enemy and they may try to shut you down. Heal their target and they may decide you're the bigger threat. Fights will feel less like hitting a punching bag and more like facing an opponent who's paying attention.</p>
+
+                    <p><strong>Specializations.</strong> Not all NPCs of the same class fight the same way. Two warrior mobs might have very different combat priorities depending on how they've been configured. Some may favor offense, others defense, and some may surprise you with more tactical choices.</p>
+
+                    <p><strong>Scaling Aggression.</strong> NPC combat intensity now scales through multiple tiers. Low-tier enemies use their abilities sparingly. Higher-tier enemies act more frequently and make better decisions. Elite enemies will push you to your limits.</p>
+
+                    <p><strong>Group Coordination.</strong> NPCs that fight alongside allies now coordinate. Healers look after their group. Frontline fighters protect weaker allies. Enemies working together are more dangerous than the sum of their parts.</p>
+
+                    <p><strong>Beast Encounters.</strong> Creatures with natural weapons now use them dynamically based on their physical traits. A beast with a tail, claws, or venom will leverage those abilities in ways that make each encounter with a different species feel unique.</p>
+
+                    <h4 class="news_example_label">A World That Resets Around You</h4>
+                    <p>The world doesn't stay the way you left it. Zones periodically restore themselves, and several key systems ensure the world feels alive and replenished:</p>
+
+                    <p><strong>Hidden exits conceal themselves again.</strong> Found a secret passage? It won't stay revealed forever. After a period of time, discovered exits re-hide, waiting for the next perceptive adventurer to notice them. Some re-hide quickly; others persist for several reset cycles before vanishing.</p>
+
+                    <p><strong>Doors re-lock.</strong> That locked door you picked open? It will eventually swing shut and re-lock itself. The world's inhabitants don't leave their doors hanging open indefinitely.</p>
+
+                    <p><strong>Containers restock.</strong> Chests, crates, and other containers refill with their original contents over time. A looted treasure chest won't stay empty forever. Its contents are restored and the container re-locks to its original state. If you found it locked and closed, it'll be locked and closed again next time.</p>
+
+                    <p><strong>Barriers rebuild.</strong> Builder-placed barriers that were destroyed will eventually restore themselves. A collapsed barricade reforms after enough time passes. Player-placed barriers, on the other hand, degrade and eventually crumble away on their own.</p>
+
+                    <div class="news_terminal">
+                        <p class="news_terminal_dim">The barrier crumbles away.</p>
+                        <p class="news_terminal_highlight">A barrier has been restored.</p>
+                    </div>
+
+                    <p><strong>Creatures return on their own schedule.</strong> Defeated monsters no longer respawn on a single zone-wide timer. Each group of creatures now has its own individual respawn timer. The gnoc patrol near the entrance might return quickly, while the dragon at the heart of the dungeon takes much longer to reappear. The world repopulates naturally, not all at once.</p>
+
+                    <h3 class="news_subheading" id="toc-camping">Camping and Shelter Deployment</h3>
+                    <p>Shelters are no longer just for encamping when you exit the game. You can now deploy them as active campsites for rest and recovery while you continue playing.</p>
+
+                    <p><strong>Deploy a Camp.</strong> Use <code>camp</code> while carrying a shelter kit to set up a campsite. Setup takes about a tick to complete and can be interrupted by combat or city guards. Once deployed, the shelter remains in the room for a duration based on its quality, and other players can join your camp if there's room.</p>
+
+                    <p><strong>Rapid Regeneration.</strong> While resting in a deployed shelter, your regeneration ticks every 10 seconds instead of the normal 60-second cycle. The total amount recovered is the same, but it's spread across six smaller intervals, giving you a steady stream of HP, mana, and movement recovery rather than waiting for one large tick.</p>
+
+                    <p><strong>Shelter Quality.</strong> Shelters range from improvised kits to fortified structures. Higher quality shelters last longer, support more campers, and allow you to camp in more dangerous locations. Examine a shelter kit to see how many uses it has remaining, or examine a deployed camp to see how many more campers it can hold.</p>
+
+                    <p><strong>Where You Can Camp.</strong> Most outdoor and indoor locations allow camping, but you cannot set up camp in water, mid-air, fire, underground passages, or areas with aggressive creatures nearby. Some locations are too hostile for lower quality shelters. City guards will also interrupt anyone trying to camp within town limits.</p>
+
+                    <h3 class="news_subheading" id="toc-itemquality">Item Quality, Artificer Reforging &amp; Item Reinforcement</h3>
+                    <p>This patch introduces Item Quality Grades, a new way to evaluate your gear, along with two new NPC services: Artificers for rerolling item stats and Item Reinforcers for improving durability.</p>
+
+                    <h4 class="news_example_label">Item Quality Grades</h4>
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New System</span>
+                            <span class="news_feature_name">Quality Grades</span>
+                        </div>
+                        <p class="news_feature_note">Items with variable properties now have a quality grade visible through the <code>identify</code> spell.</p>
+                    </div>
+                    <p>The grade reflects how well an item's current stats rolled compared to the possible range:</p>
+                    <table class="news_table">
+                        <thead>
+                            <tr><th>Grade</th><th>Rating</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>S</td><td>95&ndash;100%: near-perfect roll</td></tr>
+                            <tr><td>A</td><td>80&ndash;94%: excellent</td></tr>
+                            <tr><td>B</td><td>60&ndash;79%: above average</td></tr>
+                            <tr><td>C</td><td>40&ndash;59%: average</td></tr>
+                            <tr><td>D</td><td>20&ndash;39%: below average</td></tr>
+                            <tr><td>F</td><td>0&ndash;19%: poor</td></tr>
+                        </tbody>
+                    </table>
+                    <p>When you cast <code>identify</code> on an eligible item, you'll see a new Quality line:</p>
+                    <div class="news_terminal">
+                        <p class="news_terminal_highlight">Quality: B</p>
+                    </div>
+                    <p>Not all items have grades. Only those with properties that can vary (e.g., weapon dice, armor AC, apply bonuses). Items with fixed stats won't display a quality line.</p>
+                    <p>This gives you concrete information about whether an item is worth investing in, or whether it's a candidate for reforging at an Artificer.</p>
+
+                    <h4 class="news_example_label">Artificer: Item Reforging</h4>
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New NPC</span>
+                            <span class="news_feature_name">Artificer</span>
+                        </div>
+                        <p class="news_feature_note">NPC craftsmen who can reforge an item's variable properties, re-rolling stats within the item's original template ranges.</p>
+                    </div>
+                    <p>This gives you another shot at a better quality grade, but results are random, and you may roll worse without a probability stone.</p>
+
+                    <p><strong>Commands:</strong></p>
+                    <div class="news_terminal">
+                        <p>&gt; offer &lt;item&gt;</p>
+                        <p>&gt; offer &lt;item&gt; &lt;stone&gt;</p>
+                        <p>&gt; reforge &lt;item&gt;</p>
+                        <p>&gt; give &lt;ticket&gt; &lt;artificer&gt;</p>
+                    </div>
+
+                    <p><strong>Cost:</strong></p>
+                    <ul class="news_mechanic_list">
+                        <li>Base cost is 4x the item's value for the first reforge</li>
+                        <li>Each previous augmentation adds +2x to the multiplier (6x, 8x, 10x, ...)</li>
+                        <li>Multiplier caps at 100x; minimum cost is 100 gold</li>
+                        <li>Character's charisma does impact cost</li>
+                    </ul>
+
+                    <p><strong>Probability Stones:</strong> Rare consumable reagents that guarantee a minimum quality grade improvement and protect item durability:</p>
+                    <table class="news_table">
+                        <thead>
+                            <tr><th>Stone</th><th>Min Improvement</th><th>Cost</th><th>Time</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Grade 1 (Minor)</td><td>+1 grade</td><td>1.5x</td><td>1.5x</td></tr>
+                            <tr><td>Grade 2 (Lesser)</td><td>+2 grades</td><td>2.0x</td><td>2.0x</td></tr>
+                            <tr><td>Grade 3 (Greater)</td><td>+3 grades</td><td>3.0x</td><td>3.0x</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Example: A Grade D item with a Grade 2 stone is guaranteed to come back at least Grade B.</p>
+                    <p>Not all artificers accept stones. Use <code>offer</code> to check. Stones are consumed when the reforge begins.</p>
+
+                    <div class="news_mechanic_note">
+                        <h4>Durability Warning</h4>
+                        <p>Items with limited repairs lose 1 repair use per reforge, unless a probability stone is used, which prevents this entirely. The artificer will warn you if your item is running low.</p>
+                    </div>
+
+                    <h4 class="news_example_label">Item Reinforcer: Durability Tiers</h4>
+                    <div class="news_feature_card">
+                        <div class="news_feature_header">
+                            <span class="news_feature_tag">New NPC</span>
+                            <span class="news_feature_name">Item Reinforcer</span>
+                        </div>
+                        <p class="news_feature_note">Strengthens equipment to reduce the damage it takes during combat. Reinforcement progresses through four tiers in strict order.</p>
+                    </div>
+                    <table class="news_table">
+                        <thead>
+                            <tr><th>Tier</th><th>Effect</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Sturdy</td><td>Takes 75% of normal item damage</td></tr>
+                            <tr><td>Rugged</td><td>Takes 50% of normal item damage</td></tr>
+                            <tr><td>Fortified</td><td>Takes 25% of normal item damage (min 1)</td></tr>
+                            <tr><td>Impervious</td><td>30% chance of zero damage; otherwise takes 25% (min 1)</td></tr>
+                        </tbody>
+                    </table>
+                    <p>You cannot skip tiers. Each reinforcement advances one step. Items at Impervious cannot be reinforced further.</p>
+
+                    <p><strong>Commands:</strong></p>
+                    <div class="news_terminal">
+                        <p>&gt; offer &lt;item&gt;</p>
+                        <p>&gt; reinforce &lt;item&gt;</p>
+                        <p>&gt; give &lt;ticket&gt; &lt;reinforcer&gt;</p>
+                    </div>
+
+                    <p><strong>Pricing:</strong> Base cost scales with item value and increases at each tier. Higher tiers cost more and take longer. Each existing augment on the item adds +10% to the cost. Use <code>offer</code> to see exact pricing.</p>
+
+                    <div class="news_mechanic_note">
+                        <h4>Bonus</h4>
+                        <p>Reinforcement also fully repairs the item and removes the warped condition.</p>
+                    </div>
+
+                    <p><strong>Eligible Items:</strong> Weapons and armor (some reinforcers also handle containers).</p>
+
+                    <h4 class="news_example_label">Augmentation System</h4>
+                    <p>Reforging and reinforcement share a global augmentation counter per item. Each service increments this counter by 1.</p>
+                    <ul class="news_mechanic_list">
+                        <li><strong>Augmentation cap: 10 per item.</strong> Once reached, no further modifications of any type</li>
+                        <li>Augment count increases the cost of future reforges and reinforcements</li>
+                        <li>Plan your upgrades accordingly. The order matters for total cost</li>
+                        <li>Additional item augmentation services may already exist in the game or be added at a later time</li>
+                    </ul>
+
+                    <div class="news_mechanic_note">
+                        <h4>Item Binding</h4>
+                        <p>Both reforging and reinforcement will permanently bind unbound items to you. The NPC will warn you and require confirmation.</p>
+                    </div>
+
+                    <div class="news_mechanic_note">
+                        <h4>Ticket System</h4>
+                        <p>All services use a ticket-based claim system. You hand over your item, receive a ticket, and return later. Do not lose your ticket.</p>
+                    </div>
+
+                    <h3 class="news_subheading" id="toc-tagging">Item Tagging</h3>
+                    <p>Assign a short custom tag to any item in your inventory. Tags give you a personal keyword to quickly target specific items when carrying multiples of the same type.</p>
+
+                    <div class="news_terminal">
+                        <p>&gt; tag &lt;item&gt; [keyword]</p>
+                    </div>
+
+                    <p><strong>How It Works</strong></p>
+                    <ul class="news_mechanic_list">
+                        <li>Tags can be 1 to 5 alphanumeric characters (letters and numbers only)</li>
+                        <li>Once tagged, use the tag as a keyword in any command: wield, drop, give, etc.</li>
+                        <li>Use <code>tag &lt;item&gt;</code> with no keyword to see an item's current tag</li>
+                        <li>Tags are saved and persist across sessions</li>
+                        <li>The <code>identify</code> spell displays an item's tag alongside its keywords</li>
+                    </ul>
+
+                    <p><strong>Requirements</strong></p>
+                    <ul class="news_mechanic_list">
+                        <li>Level 50</li>
+                        <li>The item must be in your inventory</li>
+                        <li>Items bound to another player cannot be tagged</li>
+                    </ul>
+
+                    <div class="news_mechanic_note">
+                        <h4>Binding</h4>
+                        <p>Tagging an unbound item will permanently bind it to you. You will be asked to confirm before this happens. Items already bound to you can be tagged freely without an extra confirmation.</p>
+                    </div>
+
+                    <h3 class="news_subheading" id="toc-weapondmg">Weapon Damage Types and Damage Bonuses</h3>
+                    <p>The weapon and damage system has been expanded with elemental damage, multi-type weapons, and gear that amplifies specific damage types.</p>
+
+                    <p><strong>Elemental Weapon Damage.</strong> Weapon damage types have been expanded beyond the traditional physical categories (slash, pierce, blunt, blast) to include elemental types: fire, cold, electricity, acid, energy, positive, negative, and null. When a weapon deals elemental damage, the damage type determines which resistances apply and what hit text you see. A fire weapon burns, an acid weapon corrodes, a cold weapon freezes.</p>
+
+                    <p><strong>Multi-Type Weapons.</strong> Weapons can now have more than one damage type, each with a weight that determines how often it occurs. A sword forged with fire might slash 75% of the time and burn 25% of the time, randomly determined each swing. Each hit resolves as a single type, interacting with the appropriate resistances and bonuses for that type.</p>
+
+                    <p><strong>Damage Type Bonuses.</strong> A new category of item applies lets gear boost damage dealt by specific type. These come in both flat and percentage variants across all physical and elemental categories. A ring with a fire damage bonus increases the damage of fire attacks specifically. Stack these with elemental weapons for focused builds, or spread them out for versatility. These bonuses pair naturally with the existing resistance system, giving both attackers and defenders more meaningful gearing decisions.</p>
+
+                    <h3 class="news_subheading" id="toc-stables">Stables</h3>
+                    <p>Stables have been rebuilt from the ground up. The old ticket system is gone, replaced by a persistent bay system that keeps your mounts safe and their gear intact.</p>
+
+                    <p><strong>Stable Bays.</strong> You can now purchase personal stalls at any stable location. Your first bay costs 15,000 gold, with each additional bay doubling in price, up to a maximum of 5 bays per player. Use <code>buy stall</code> at any stablemaster to purchase one.</p>
+
+                    <p><strong>Stow and Retrieve.</strong> Use <code>stow &lt;mount&gt;</code> to place a mount in one of your bays and <code>retrieve &lt;mount&gt;</code> to bring it back out. Retrieved mounts are automatically hitched and ready to go. Use <code>stable</code> to see which bays are occupied. Each stable operates independently, so you must return to the same stable where you stowed your mount.</p>
+
+                    <p><strong>Equipment Persistence.</strong> Mounts retain their saddles and barding across stowing and retrieval. No more stripping gear before stabling. Note that saddle bags must be emptied before stowing.</p>
+
+                    <p><strong>Mount Shop.</strong> Stablemasters sell mounts directly. Use <code>list</code> to see what's available and <code>buy &lt;mount&gt;</code> to purchase.</p>
+
+                    <h3 class="news_subheading" id="toc-warehouse">Warehouse Storage</h3>
+                    <p>The warehouse system has been overhauled with new pricing, container support, and an expiration overhaul.</p>
+
+                    <p><strong>Container Storage.</strong> Warehouses that support it now accept container items. Store a bag or chest and its contents are preserved. When you withdraw, everything comes back as you left it. You can store up to 3 containers per warehouse. Use <code>list &lt;tag#&gt;</code> to inspect a stored container's contents.</p>
+
+                    <p><strong>Dynamic Pricing.</strong> Storage costs now factor in item value, weight, and how many days you want to store. Different warehouses may charge different rates. Use <code>value</code> to get a quote before committing.</p>
+
+                    <p><strong>Late Fees and Forfeiture.</strong> Overdue items now incur an escalating late fee instead of disappearing immediately. The surcharge starts at 10% and grows over time, capping at 50%. Items left unclaimed for 365 real-life days are forfeited permanently.</p>
+
+                    <p><strong>Early Withdrawal Refunds.</strong> Retrieving items before their storage expires now refunds the unused days.</p>
+
+                    <p><strong>Storage Limits.</strong> Each character can store up to 50 items at any single warehouse. Each warehouse operates independently.</p>
+
+                    <h3 class="news_subheading">Stay Connected</h3>
+                    <p>Join us on <a href="https://discord.gg/TnBAMt5">Discord</a> for the latest updates, discussion, and early previews. You can also follow us on <a href="https://www.facebook.com/blackmud.2000">Facebook</a> or reach the development team at <a href="mailto:mudadmin@blackmud.com?subject=BM3.0">mudadmin@blackmud.com</a>.</p>
+
+                    <p>The Age of Discovery is almost here. We hope you'll be part of it.</p>
+
+                    <p class="news_article_sign">The BlackMUD Development Team</p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="page_footer">
+            <div class="footer_spacer"></div>
+            <div class="page_footer_links">
+                <div id="footer_nav">
+                    <ul>
+                        <li><a href="./index.html#welcome">Home</a></li>
+                        <li><a href="./index.html#game_details">Game Info</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./resources.html">Resources</a></li>
+                        <li><a href="mailto:mudadmin@blackmud.com?subject=BlackMUD">Contact</a></li>
+                        <li><a href="./news.html">News</a></li>
+                    </ul>
+                </div>
+                <div id="footer_nav">
+                    <ul>
+                        <li><a href="./history.html">Lore & History</a></li>
+                        <li><a href="./maps.html">World</a></li>
+                        <li><a href="./races.html">Races</a></li>
+                        <li><a href="./classes.html">Classes</a></li>
+                        <li><a href="./gods.html">Pantheon</a></li>
+                        <li><a href="./rules.html">Policies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_mid_spacer"></div>
+            <div id="client">
+                <p>BlackMUD is one of the oldest still-running muds online. Text-only multi-player adventure, role-playing, and nostalgia at it's best.</p>
+                <p>Connect to the game. We recommend getting a good mud client. You can find one <a href="https://www.mudlet.org/">here</a>.</p>
+                <p>&copy;2026 BlackMUD Development Group</p>
+            </div>
+            <div class="footer_spacer"></div>
+        </div>
+    </footer>
+</body>
+</html>
